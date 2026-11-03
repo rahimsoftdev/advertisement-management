@@ -4,6 +4,7 @@ import HomePage from "../../pages/HomePage"
 import PricingPage from "../../pages/PricingPage"
 import AuthLayout from "../../layouts/AuthLayout"
 import Login from "../../pages/Login"
+import Register from "../../pages/Register"
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,10 @@ const router = createBrowserRouter([
         children:[
             {
                 path:"login", Component:Login
-            }
+            },
+            {
+                path:"register", Component:Register
+            },
         ]
     }
 ])
