@@ -7,7 +7,8 @@
     "howItWorks": "Comment ça marche ?",
     "login": "Se connecter",
     "register": "S'inscrire",
-    "language": "Langue"
+    "language": "Langue",
+    "logout": "Déconnexion"
   },
   "footer": {
     "description": "Créez des annonces immobilières professionnelles en quelques minutes seulement.",

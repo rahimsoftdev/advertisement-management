@@ -25,7 +25,7 @@ const PricingHero: React.FC = () => {
   const { t } = useTranslation('pricing');
 
   return (
-    <section className="relative overflow-hidden bg-[#fdf9ef] pt-5 sm:pt-12 lg:pt-14">
+    <section className="relative overflow-hidden bg-[#FFFCF6] pt-5 sm:pt-12 lg:pt-14">
       {/* Container: max-width + centered, text sits on its left edge, image on its right edge */}
       <div className="container mx-auto px-4 lg:px-10">
         <div className="grid w-full grid-cols-1 lg:grid-cols-[56%_44%] lg:aspect-[700/240]">

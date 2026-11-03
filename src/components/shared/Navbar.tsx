@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router";
+import { NavLink, useLocation, useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
-import { FiMenu, FiX, FiGlobe, FiChevronDown } from "react-icons/fi";
+import { FiMenu, FiX, FiGlobe, FiChevronDown, FiLogOut } from "react-icons/fi";
 import logo from "../../assets/images/logo.png";
+import { getAuthInfo } from "../../utils/auth";
 
 const languages = [
   { code: "fr", label: "Français" },
@@ -10,12 +11,41 @@ const languages = [
   { code: "bn", label: "বাংলা" },
 ];
 
+// Route onujayi navbar-er background color.
+// Tailwind-er jonno class gulo pura static string hote hobe, tai alada alada lekha.
+const getNavbarBg = (pathname: string) => {
+  // Trailing slash soriye normalize (/login/ -> /login)
+  const path = pathname.replace(/\/+$/, "") || "/";
+
+  if (
+    path === "/login" ||
+    path === "/register" ||
+    path === "/announcement/new"
+  ) {
+    return "bg-[#FAF9F7]";
+  }
+
+  if (path === "/pricing" || path === "/") {
+    return "bg-[#FFFCF6]";
+  }
+
+  return "bg-white";
+};
+
 const Navbar = () => {
   const { t, i18n } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Login thakle user info, na thakle null
+  const [userInfo, setUserInfo] = useState(getAuthInfo());
 
   const currentLanguage = i18n.language.split("-")[0];
+
+  // Current route-er navbar background
+  const navbarBg = getNavbarBg(location.pathname);
 
   const navLinks = [
     { name: t("navbar.home"), path: "/" },
@@ -31,6 +61,42 @@ const Navbar = () => {
     i18n.changeLanguage(language);
     localStorage.setItem("i18nextLng", language);
   };
+
+  // Logout: localStorage theke user info remove kore home e pathabe
+  const handleLogout = () => {
+    try {
+      localStorage.removeItem("authInfo");
+    } catch {
+      // localStorage access na pele ignore
+    }
+    setUserInfo(null);
+    window.dispatchEvent(new Event("authChange"));
+    setIsOpen(false);
+    navigate("/");
+  };
+
+  // Login/logout hole ba onno tab e change hole navbar update hobe
+  useEffect(() => {
+    const syncAuth = () => setUserInfo(getAuthInfo());
+
+    window.addEventListener("authChange", syncAuth);
+    window.addEventListener("storage", syncAuth);
+
+    return () => {
+      window.removeEventListener("authChange", syncAuth);
+      window.removeEventListener("storage", syncAuth);
+    };
+  }, []);
+
+  // Scroll korle navbar-e shadow dekhabe
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 0);
+
+    onScroll(); // page load e age thekei scroll kora thakle
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -66,8 +132,6 @@ const Navbar = () => {
   }, []);
 
   // Desktop link: normal = primaryText, hover/active = myprimary.
-  // Active link gets a myprimary bottom border (all links reserve a transparent
-  // border so nothing shifts when the active link changes).
   const desktopLinkClass = ({ isActive }: { isActive: boolean }) =>
     `whitespace-nowrap  py-1.5 text-sm transition-colors duration-200 xl:text-base ${
       isActive
@@ -113,10 +177,17 @@ const Navbar = () => {
   const registerClass =
     "inline-flex h-10 min-w-[104px] items-center justify-center whitespace-nowrap rounded-lg border border-myprimary bg-myprimary px-5 text-sm font-medium text-white shadow-sm transition hover:opacity-90 active:scale-95 xl:text-base";
 
+  // Logout button (desktop): myprimary background, icon + text
+  const logoutClass =
+    "inline-flex h-10 min-w-[104px] cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-myprimary bg-myprimary px-5 text-sm font-medium text-white shadow-sm transition hover:opacity-90 active:scale-95 xl:text-base";
+
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-      {/* 3 columns on desktop: logo | links (centered) | actions.
-          Logo and actions keep their place no matter how long the link text is. */}
+    <header
+      className={`sticky top-0 z-50 transition-all duration-200 ${navbarBg} ${
+        isScrolled ? "shadow-md" : "shadow-none"
+      }`}
+    >
+      {/* 3 columns on desktop: logo | links (centered) | actions. */}
       <nav className="container flex items-center justify-between px-4 lg:px-10 py-3 lg:grid lg:grid-cols-[auto_1fr_auto] lg:gap-6 lg:py-4">
         {/* Logo */}
         <NavLink
@@ -150,13 +221,24 @@ const Navbar = () => {
         <div className="hidden items-center gap-2 lg:flex xl:gap-3">
           <LanguageSelect className="w-[140px]" />
 
-          <NavLink to="/login" className={loginClass}>
-            {t("navbar.login")}
-          </NavLink>
+          {userInfo ? (
+            // Login kora thakle: shudhu Logout button
+            <button type="button" onClick={handleLogout} className={logoutClass}>
+              <FiLogOut className="text-base" />
+              <span>{t("navbar.logout")}</span>
+            </button>
+          ) : (
+            // Login kora na thakle: Login + Register
+            <>
+              <NavLink to="/login" className={loginClass}>
+                {t("navbar.login")}
+              </NavLink>
 
-          <NavLink to="/register" className={registerClass}>
-            {t("navbar.register")}
-          </NavLink>
+              <NavLink to="/register" className={registerClass}>
+                {t("navbar.register")}
+              </NavLink>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -185,7 +267,7 @@ const Navbar = () => {
 
           <div
             id="mobile-menu"
-            className="relative z-50 max-h-[calc(100vh-57px)] overflow-y-auto border-t border-gray-100 bg-white px-4 py-4 shadow-lg sm:px-6 lg:hidden"
+            className={`relative z-50 max-h-[calc(100vh-57px)] overflow-y-auto border-t border-gray-100 px-4 py-4 shadow-lg sm:px-6 lg:hidden ${navbarBg}`}
           >
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
@@ -206,23 +288,38 @@ const Navbar = () => {
             {/* Mobile Language Selector */}
             <LanguageSelect className="w-full" />
 
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              <NavLink
-                to="/login"
-                onClick={() => setIsOpen(false)}
-                className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary px-4 text-center text-sm font-medium text-myprimary transition hover:bg-myprimary hover:text-white sm:text-base"
-              >
-                {t("navbar.login")}
-              </NavLink>
+            {userInfo ? (
+              // Login kora thakle: shudhu Logout button
+              <div className="mt-4">
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="inline-flex h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
+                >
+                  <FiLogOut className="text-base" />
+                  <span>{t("navbar.logout")}</span>
+                </button>
+              </div>
+            ) : (
+              // Login kora na thakle: Login + Register
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                <NavLink
+                  to="/login"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary px-4 text-center text-sm font-medium text-myprimary transition hover:bg-myprimary hover:text-white sm:text-base"
+                >
+                  {t("navbar.login")}
+                </NavLink>
 
-              <NavLink
-                to="/register"
-                onClick={() => setIsOpen(false)}
-                className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
-              >
-                {t("navbar.register")}
-              </NavLink>
-            </div>
+                <NavLink
+                  to="/register"
+                  onClick={() => setIsOpen(false)}
+                  className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
+                >
+                  {t("navbar.register")}
+                </NavLink>
+              </div>
+            )}
           </div>
         </>
       )}
