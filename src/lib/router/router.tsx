@@ -6,6 +6,8 @@ import AuthLayout from "../../layouts/AuthLayout"
 import Login from "../../pages/Login"
 import Register from "../../pages/Register"
 import AboutPage from "../../pages/AboutPage"
+// import HowItWork from "../../pages/HowItWorkPage"
+import HowItWorkPage from "../../pages/HowItWorkPage"
 
 const router = createBrowserRouter([
     {
@@ -20,7 +22,9 @@ const router = createBrowserRouter([
             },
             {
                 path:"about", Component:AboutPage
-            },
+            },{
+                path:"how-work", Component:HowItWorkPage
+            }
         ]
     },
     {

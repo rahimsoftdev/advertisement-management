@@ -28,7 +28,7 @@ const AiCreditsPricing: React.FC = () => {
             <div className="container mx-auto px-4 lg:px-10">
 
                 {/* Section Header (left aligned) */}
-                <div className="mb-3 sm:mb-12 max-w-2xl space-y-2">
+                <div className="mb-3 sm:mb-12 max-w-2xl space-y-2 max-sm:text-center">
                     <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-primaryText">
                         {t('aiCredits.title')}
                     </h2>

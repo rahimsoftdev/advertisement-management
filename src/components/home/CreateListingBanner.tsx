@@ -66,7 +66,7 @@ const CreateListingBanner: React.FC = ({isPricing  = false }:PricingCardProps) =
                   <h3 className="text-base   sm:text-lg font-bold leading-snug">
                     {t('createListing.cardTitle')}
                   </h3>
-                  <p className="text-[11px] sm:text-xs text-white font-poppins leading-relaxed max-w-sm mx-auto">
+                  <p className="text-[11px] sm:text-xs !text-white font-poppins leading-relaxed max-w-sm mx-auto">
                     {t('createListing.cardDescription')}
                   </p>
                 </div>

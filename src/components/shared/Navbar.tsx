@@ -28,6 +28,9 @@ const getNavbarBg = (pathname: string) => {
   if (path === "/pricing" || path === "/") {
     return "bg-[#FFFCF6]";
   }
+  if(path === "/about"){
+    return 'bg-[#FDFBF5]'
+  }
 
   return "bg-white";
 };

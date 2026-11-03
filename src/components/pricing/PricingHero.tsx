@@ -39,7 +39,7 @@ const PricingHero: React.FC = () => {
             </span>
 
             {/* Title */}
-            <h1 className="mt-4 lg:mt-[2%] text-4xl lg:text-[clamp(2.25rem,3.7vw,4.5rem)] font-extrabold tracking-tight text-primaryText leading-[1.12] max-w-[520px] lg:max-w-none">
+            <h1 className="mt-4 lg:mt-[2%] text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-primaryText leading-[1.12] max-w-[520px] lg:max-w-none">
               {t('hero.title')}
             </h1>
 

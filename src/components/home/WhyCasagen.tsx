@@ -25,15 +25,15 @@ const WhyCasagen: React.FC = () => {
         {/* Header row: label + title (left) | description (right) */}
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-3">
-            <span className="block text-xs font-semibold uppercase tracking-wider text-myprimary sm:text-sm">
+            <span className="block text-xs font-semibold uppercase tracking-wider text-myprimary sm:text-sm max-sm:text-center">
               {t('whyCasagen.subtitle')}
             </span>
-            <h2 className="text-2xl font-extrabold leading-[1.2] tracking-tight text-primaryText sm:text-3xl lg:text-4xl">
+            <h2 className="text-2xl font-extrabold leading-[1.2] tracking-tight text-primaryText sm:text-3xl lg:text-4xl max-sm:text-center">
               {t('whyCasagen.title')}
             </h2>
           </div>
 
-          <p className="font-poppins text-sm leading-relaxed text-secondaryText sm:text-base ">
+          <p className="font-poppins text-sm leading-relaxed text-secondaryText sm:text-base max-sm:text-center ">
             {t('whyCasagen.description')}
           </p>
         </div>
