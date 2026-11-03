@@ -36,5 +36,12 @@
     "pricingTitle": "Pricing: starting from 9.90 CHF",
     "pricingDesc": "No subscription, no commitment. Pay only for what you need.",
     "buttonText": "Start now"
+  },
+  "expertSection": {
+    "title": "Developed by a federally certified real estate agent in Switzerland",
+    "badgeTitle": "Certified expertise",
+    "badgeSubtitle": "Switzerland",
+    "description": "Your real estate listing is in expert hands.",
+    "footerText": "2026 Casagen. Developed by a federally certified real estate agent in Switzerland."
   }
 }

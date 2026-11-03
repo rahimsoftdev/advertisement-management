@@ -36,5 +36,12 @@
     "pricingTitle": "Tarif : à partir de 9.90 CHF",
     "pricingDesc": "Pas d'abonnement, pas d'engagement. Payez uniquement ce dont vous avez besoin.",
     "buttonText": "Commencez maintenant"
+  },
+  "expertSection": {
+    "title": "Développé par un agent immobilier titulaire d'un brevet fédéral en Suisse",
+    "badgeTitle": "Expertise certifiée",
+    "badgeSubtitle": "Suisse",
+    "description": "Votre annonce immobilière est entre des mains expertes.",
+    "footerText": "2026 Casagen. Développé par un agent immobilier titulaire d'un brevet fédéral en Suisse."
   }
 }
