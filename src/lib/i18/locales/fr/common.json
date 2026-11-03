@@ -1,0 +1,12 @@
+
+{
+  "navbar": {
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "about": "À propos",
+    "howItWorks": "Comment ça marche ?",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "language": "Langue"
+  }
+}

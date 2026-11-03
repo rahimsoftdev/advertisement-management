@@ -3,8 +3,38 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+* {
+  box-sizing: border-box;
+}
+
+
 
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+
+
+  --color-myprimary: #3A7D6C;
+
+  --color-primaryText: #374151;
+  --color-secondaryText: #6B7280;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter);
+}
+
+h1 {
+  color: #374151;
+}
+
+p {
+  color: #6B7280;
+  font-family: var(--font-poppins);
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
 }

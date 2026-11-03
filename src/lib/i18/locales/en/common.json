@@ -1,0 +1,12 @@
+
+{
+  "navbar": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "about": "About",
+    "howItWorks": "How It Works",
+    "login": "Login",
+    "register": "Register",
+    "language": "Language"
+  }
+}
