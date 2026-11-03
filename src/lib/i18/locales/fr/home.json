@@ -43,5 +43,33 @@
     "badgeSubtitle": "Suisse",
     "description": "Votre annonce immobilière est entre des mains expertes.",
     "footerText": "2026 Casagen. Développé par un agent immobilier titulaire d'un brevet fédéral en Suisse."
+  },
+  "howItWorks": {
+    "title": "Comment ça marche ?",
+    "subtitle": "Votre annonce, prête en quelques clics.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Décrivez votre propriété",
+        "description": "Remplissez des champs simples concernant votre propriété"
+      },
+      {
+        "number": "02",
+        "title": "Laissez Casagen faire le travail",
+        "description": "L'IA génère des publicités professionnelles avec une expertise suisse. Publiez votre annonce."
+      },
+      {
+        "number": "03",
+        "title": "Obtenez l'annonce de votre choix",
+        "description": "Copiez, téléchargez et partagez votre annonce facilement"
+      }
+    ]
+  },
+  "createListing": {
+    "title": "Créez votre première annonce.",
+    "subtitle": "Vous devez déverrouiller vos annonces avant de pouvoir les consulter.",
+    "cardTitle": "Créez votre annonce pour 9.90 CHF",
+    "cardDescription": "Débloquez votre annonce professionnelle. Accédez-y immédiatement, à une publicité immobilière claire, structurée et percutante, conçue sur mesure pour le marché suisse.",
+    "buttonText": "Créez votre annonce"
   }
 }

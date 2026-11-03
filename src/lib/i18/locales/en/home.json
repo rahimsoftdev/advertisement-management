@@ -43,5 +43,33 @@
     "badgeSubtitle": "Switzerland",
     "description": "Your real estate listing is in expert hands.",
     "footerText": "2026 Casagen. Developed by a federally certified real estate agent in Switzerland."
+  },
+  "howItWorks": {
+    "title": "How it works?",
+    "subtitle": "Your listing, ready in a few clicks.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Describe your property",
+        "description": "Fill out simple fields regarding your property"
+      },
+      {
+        "number": "02",
+        "title": "Let Casagen do the work",
+        "description": "AI generates professional listings with Swiss expertise. Publish your listing."
+      },
+      {
+        "number": "03",
+        "title": "Get your listing of choice",
+        "description": "Copy, download, and share your listing easily"
+      }
+    ]
+  },
+  "createListing": {
+    "title": "Create your first listing.",
+    "subtitle": "You must unlock your listings before you can view them.",
+    "cardTitle": "Create your listing for 9.90 CHF",
+    "cardDescription": "Unlock your professional listing. Get immediate access to clear, structured, and impactful real estate advertising, tailored for the Swiss market.",
+    "buttonText": "Create your listing"
   }
 }

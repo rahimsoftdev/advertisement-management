@@ -4,18 +4,23 @@ import Hero from '../components/home/Hero'
 import WhyCasagen from '../components/home/WhyCasagen'
 import FastListing from '../components/home/FastListing'
 import ExpertSection from '../components/home/ExpertSection'
+import HowItWorks from '../components/home/HowItWorks'
+import CreateListingBanner from '../components/home/CreateListingBanner'
 
 export default function HomePage() {
   return (
     <div>
-      <Hero/>
-      <WhyCasagen/>
+      <Hero />
+      <WhyCasagen />
 
 
+      <CreateListingBanner/>
 
-      <ExpertSection/>
 
-      <FastListing/>
+      <HowItWorks />
+      <ExpertSection />
+
+      <FastListing />
       {/* <CtaSection/> */}
     </div>
   )

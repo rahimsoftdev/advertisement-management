@@ -20,7 +20,7 @@ const WhyCasagen: React.FC = () => {
   const { t } = useTranslation('home');
 
   return (
-    <section className="relative overflow-hidden bg-white py-10 sm:py-12 lg:py-section">
+    <section className="relative overflow-hidden bg-[#FAF9F7] py-10 sm:py-12 lg:py-section">
       <div className="container mx-auto px-4 lg:px-10">
         {/* Header row: label + title (left) | description (right) */}
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2 lg:gap-12">
