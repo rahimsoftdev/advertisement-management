@@ -33,13 +33,13 @@ const WhyCasagen: React.FC = () => {
             </h2>
           </div>
 
-          <p className="font-poppins text-sm leading-relaxed text-secondaryText sm:text-base lg:pt-6">
+          <p className="font-poppins text-sm leading-relaxed text-secondaryText sm:text-base ">
             {t('whyCasagen.description')}
           </p>
         </div>
 
         {/* Content row: stats (left) | image collage (right) */}
-        <div className="mt-8 grid grid-cols-1 items-start gap-10 lg:mt-10 lg:grid-cols-2 lg:gap-12">
+        <div className="mt-5 grid grid-cols-1 items-start gap-10 lg:mt-7 lg:grid-cols-2 lg:gap-12">
           {/* Left: stats + button */}
           <div className="space-y-8">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -98,7 +98,7 @@ const WhyCasagen: React.FC = () => {
             </div>
 
             {/* Bottom left: small, colorful facade */}
-            <div className="col-span-2 row-span-2 row-start-2 overflow-hidden rounded-md sm:rounded-lg">
+            <div className="col-span-2 row-span-2 row-start-2 row-end-3 overflow-hidden rounded-md sm:rounded-lg">
               <img
                 src={images.colorful}
                 alt="Facade"

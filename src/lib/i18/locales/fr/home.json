@@ -22,5 +22,19 @@
     "stat4Title": "100%",
     "stat4Desc": "Qualité Suisse",
     "buttonText": "À propos de nous"
+  },
+  "fastListing": {
+    "title": "Votre annonce, prête en seulement quelques clics.",
+    "features": [
+      "Gain de temps.",
+      "Annonces professionnelles.",
+      "Adapté au marché suisse.",
+      "Pas de jargon technique.",
+      "Accessible à tous.",
+      "Résultats immédiats."
+    ],
+    "pricingTitle": "Tarif : à partir de 9.90 CHF",
+    "pricingDesc": "Pas d'abonnement, pas d'engagement. Payez uniquement ce dont vous avez besoin.",
+    "buttonText": "Commencez maintenant"
   }
 }

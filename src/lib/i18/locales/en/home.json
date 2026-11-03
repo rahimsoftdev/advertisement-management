@@ -22,5 +22,19 @@
     "stat4Title": "100%",
     "stat4Desc": "Swiss Quality",
     "buttonText": "About us"
+  },
+  "fastListing": {
+    "title": "Your listing, ready in just a few clicks.",
+    "features": [
+      "Save time.",
+      "Professional listings.",
+      "Adapted to the Swiss market.",
+      "No technical jargon.",
+      "Accessible to everyone.",
+      "Immediate results."
+    ],
+    "pricingTitle": "Pricing: starting from 9.90 CHF",
+    "pricingDesc": "No subscription, no commitment. Pay only for what you need.",
+    "buttonText": "Start now"
   }
 }
