@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-myprimary text-white">
       {/* Top Grid Sections */}
-      <div className="container mx-auto px-4 pb-10 pt-10 sm:px-6 sm:pb-12 sm:pt-12 lg:pt-14">
+      <div className="container mx-auto px-4 lg:px-10 pb-10 pt-10 sm:px-6 sm:pb-12 sm:pt-12 lg:pt-14">
         <div className=" grid  grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {/* Column 1: Brand Logo & Badges */}
           <div className="space-y-5 sm:col-span-2 lg:col-span-1">

@@ -8,5 +8,19 @@
   "cta": {
     "title": "Ready to create your professional listing?",
     "buttonText": "Start now"
+  },
+  "whyCasagen": {
+    "subtitle": "WHY CASAGEN",
+    "title": "Create impactful real estate listings in a few clicks, effortlessly.",
+    "description": "Combine the power of artificial intelligence with the human expertise of a certified professional to achieve exceptional results.",
+    "stat1Title": "15+",
+    "stat1Desc": "Years of expertise",
+    "stat2Title": "2 minutes",
+    "stat2Desc": "To create your listing",
+    "stat3Title": "9.90 CHF",
+    "stat3Desc": "Initial price",
+    "stat4Title": "100%",
+    "stat4Desc": "Swiss Quality",
+    "buttonText": "About us"
   }
 }

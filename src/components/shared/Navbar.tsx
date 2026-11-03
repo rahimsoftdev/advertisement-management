@@ -117,7 +117,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       {/* 3 columns on desktop: logo | links (centered) | actions.
           Logo and actions keep their place no matter how long the link text is. */}
-      <nav className="container flex items-center justify-between px-4 py-3 sm:px-6 lg:grid lg:grid-cols-[auto_1fr_auto] lg:gap-6 lg:py-4">
+      <nav className="container flex items-center justify-between px-4 lg:px-10 py-3 lg:grid lg:grid-cols-[auto_1fr_auto] lg:gap-6 lg:py-4">
         {/* Logo */}
         <NavLink
           to="/"

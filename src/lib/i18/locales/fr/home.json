@@ -8,5 +8,19 @@
   "cta": {
     "title": "Prêt à créer votre annonce professionnelle ?",
     "buttonText": "Commencez maintenant"
+  },
+  "whyCasagen": {
+    "subtitle": "POURQUOI CASAGEN",
+    "title": "Créez des annonces immobilières percutantes en quelques clics, sans aucun effort.",
+    "description": "Combinez la puissance de l'intelligence artificielle avec l'expertise humaine d'un professionnel certifié pour obtenir des résultats exceptionnels.",
+    "stat1Title": "15+",
+    "stat1Desc": "Années d'expertise",
+    "stat2Title": "2 minutes",
+    "stat2Desc": "Pour créer votre annonce",
+    "stat3Title": "9.90 CHF",
+    "stat3Desc": "Prix initial",
+    "stat4Title": "100%",
+    "stat4Desc": "Qualité Suisse",
+    "buttonText": "À propos de nous"
   }
 }
