@@ -8,5 +8,20 @@
     "login": "Login",
     "register": "Register",
     "language": "Language"
+  },
+  "footer": {
+    "description": "Create professional real estate listings in just a few minutes.",
+    "badge1": "Developed by a federally certified real estate agent in Switzerland.",
+    "badge2": "Casagen is a writing assistance tool only.",
+    "quickLinksTitle": "Quick Links",
+    "home": "Home",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "legal": "Legal Notice",
+    "supportTitle": "Support and Legal Information",
+    "login": "Login / Dashboard",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "2026 Casagen. All rights reserved."
   }
 }

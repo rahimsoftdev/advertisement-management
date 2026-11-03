@@ -8,5 +8,20 @@
     "login": "Se connecter",
     "register": "S'inscrire",
     "language": "Langue"
+  },
+  "footer": {
+    "description": "Créez des annonces immobilières professionnelles en quelques minutes seulement.",
+    "badge1": "Développé par un agent immobilier titulaire d'un brevet fédéral en Suisse.",
+    "badge2": "Casagen est un outil d'aide à la rédaction uniquement.",
+    "quickLinksTitle": "Liens rapides",
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "about": "À propos de nous",
+    "legal": "Mentions légales",
+    "supportTitle": "Assistance et informations juridiques",
+    "login": "Connexion / Tableau de bord",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "rights": "2026 Casagen. Tous droits réservés."
   }
 }
