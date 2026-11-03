@@ -4,5 +4,9 @@
     "title": "Create your real estate listing in just a few minutes",
     "description": "Clear, professional and effective listings, powered by AI and the expertise of a federally certified real estate agent in Switzerland",
     "buttonText": "Create my listing"
+  },
+  "cta": {
+    "title": "Ready to create your professional listing?",
+    "buttonText": "Start now"
   }
 }
