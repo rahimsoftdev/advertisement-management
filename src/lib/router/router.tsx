@@ -5,6 +5,7 @@ import PricingPage from "../../pages/PricingPage"
 import AuthLayout from "../../layouts/AuthLayout"
 import Login from "../../pages/Login"
 import Register from "../../pages/Register"
+import AboutPage from "../../pages/AboutPage"
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,10 @@ const router = createBrowserRouter([
             },
             {
                 path:"pricing", Component:PricingPage
-            }
+            },
+            {
+                path:"about", Component:AboutPage
+            },
         ]
     },
     {

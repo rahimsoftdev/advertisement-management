@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "badge": "Technology at the service of people.",
+    "title": "About Casagen",
+    "description": "The intelligent platform, developed with the expertise of a Swiss real estate expert, which allows individuals to create professional real estate listings with complete ease."
+  },
+  "mission": {
+    "title": "Our mission",
+    "description1": "Casagen was born from a simple observation: many people encounter difficulties in writing an effective real estate listing.",
+    "description2": "Lack of time, lack of experience, fear of making mistakes... Our mission is to make listing creation accessible to everyone, thanks to technology and true field expertise."
+  },
+  "expertise": {
+    "title": "Real expertise",
+    "description": "The project is led by a real estate professional in Switzerland, holder of the federal diploma. This expertise allows us to design listings perfectly adapted to market requirements.",
+    "footerText": "Technology at the service of people."
+  }
+}

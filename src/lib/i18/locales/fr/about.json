@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "badge": "La technologie au service des gens.",
+    "title": "À propos de Casagen",
+    "description": "La plateforme intelligente, développée avec l'expertise d'un expert immobilier suisse, qui permet aux particuliers de créer des annonces immobilières professionnelles en toute simplicité"
+  },
+  "mission": {
+    "title": "Notre mission",
+    "description1": "Casagen est né d'un constat simple : de nombreuses personnes rencontrent des difficultés à rédiger une annonce immobilière efficace.",
+    "description2": "Manque de temps, manque d'expérience, peur de se tromper... Notre mission est de rendre la création d'annonces accessible à tous, grâce à la technologie et à une véritable expertise du terrain."
+  },
+  "expertise": {
+    "title": "Une véritable expertise",
+    "description": "Le projet est porté par un professionnel de l'immobilier en Suisse, titulaire du brevet fédéral. Cette expertise nous permet de concevoir des annonces parfaitement adaptées aux exigences du marché.",
+    "footerText": "La technologie au service des gens."
+  }
+}
