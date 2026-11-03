@@ -86,7 +86,7 @@ const Navbar = () => {
   // Fixed-width language selector so changing language never shifts other items
   const LanguageSelect = ({ className = "" }: { className?: string }) => (
     <div
-      className={`relative flex h-10 items-center rounded-lg border border-gray-200 bg-white transition-colors focus-within:border-myprimary focus-within:ring-2 focus-within:ring-myprimary/20 hover:border-myprimary ${className}`}
+      className={`relative flex h-10 items-center rounded-lg border border-gray-200 bg-transparent transition-colors focus-within:border-myprimary focus-within:ring-2 focus-within:ring-myprimary/20 hover:border-myprimary ${className}`}
     >
       <FiGlobe className="pointer-events-none absolute left-3 text-base text-primaryText" />
       <select

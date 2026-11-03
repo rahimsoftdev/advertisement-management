@@ -18,6 +18,7 @@
 
   --color-primaryText: #374151;
   --color-secondaryText: #6B7280;
+  --spacing-section:100px;
 }
 
 body {

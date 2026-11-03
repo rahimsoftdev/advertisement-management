@@ -1,10 +1,10 @@
 import React from 'react'
+import Hero from '../components/home/Hero'
 
 export default function HomePage() {
   return (
     <div>
-      <h1>thsi si home page</h1>
-      <p>ggyu</p>
+      <Hero/>
     </div>
   )
 }
