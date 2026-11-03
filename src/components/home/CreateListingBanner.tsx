@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { HiOutlineDocumentText } from 'react-icons/hi2';
 
 // Cream notepad + pen illustration (no external image needed)
+interface PricingCardProps {
+  isPricing?: boolean;
+}
 const NotePad: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     viewBox="0 0 120 110"
@@ -31,18 +34,18 @@ const NotePad: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-const CreateListingBanner: React.FC = () => {
+const CreateListingBanner: React.FC = ({isPricing  = false }:PricingCardProps) => {
   const { t } = useTranslation('home');
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF9F7] ">
-      <div className="container mx-auto px-4  lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    <section className={`relative overflow-hidden ${isPricing ? 'bg-white' : 'bg-[#FAF9F7]'} `}>
+      <div className={`container mx-auto px-4  lg:px-10 ${isPricing && 'py-10 sm:py-12 lg:py-section'}`}>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 ">
           {/* Left Side */}
           <div className="lg:col-span-6 space-y-5 sm:space-y-6 text-center lg:text-left">
             {/* Header */}
             <div className="space-y-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold tracking-tight text-[#2F3745] leading-[1.25] max-w-md mx-auto lg:mx-0">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-primaryText leading-[1.25] max-w-md mx-auto lg:mx-0">
                 {t('createListing.title')}
               </h2>
               <p className="text-secondaryText text-xs sm:text-sm font-poppins max-w-sm mx-auto lg:mx-0">
@@ -51,19 +54,19 @@ const CreateListingBanner: React.FC = () => {
             </div>
 
             {/* Green Card with outer ring */}
-            <div className="w-full max-w-md lg:max-w-[440px] mx-auto lg:mx-0 p-1.5 rounded-[28px] border border-myprimary/70 bg-white/40">
+            <div className="w-full max-w-md lg:max-w-[440px] mx-auto lg:mx-0 p-1.5 rounded-[28px] border- border-myprimary/70 bg-white/40">
               <div className="rounded-3xl bg-myprimary text-white shadow-lg px-5 py-6 sm:px-8 sm:py-8 text-center space-y-4 sm:space-y-5">
                 {/* Icon */}
-                <div className="mx-auto w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center">
+                <div className="mx-auto w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white text-myprimary flex items-center justify-center">
                   <HiOutlineDocumentText className="text-xl sm:text-2xl" aria-hidden="true" />
                 </div>
 
                 {/* Text */}
                 <div className="space-y-2">
-                  <h3 className="text-base sm:text-lg font-bold leading-snug">
+                  <h3 className="text-base   sm:text-lg font-bold leading-snug">
                     {t('createListing.cardTitle')}
                   </h3>
-                  <p className="text-[11px] sm:text-xs text-white/80 font-poppins leading-relaxed max-w-sm mx-auto">
+                  <p className="text-[11px] sm:text-xs text-white font-poppins leading-relaxed max-w-sm mx-auto">
                     {t('createListing.cardDescription')}
                   </p>
                 </div>
@@ -71,7 +74,7 @@ const CreateListingBanner: React.FC = () => {
                 {/* CTA */}
                 <button
                   type="button"
-                  className="w-full inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-[#2F3745] text-sm sm:text-base font-medium font-poppins shadow-md hover:bg-gray-100 active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 transition-all duration-200 cursor-pointer"
+                  className="w-full inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-primaryText text-sm sm:text-base font-medium font-poppins shadow-md hover:bg-gray-100 active:scale-[0.98] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/40 transition-all duration-200 cursor-pointer"
                 >
                   {t('createListing.buttonText')}
                 </button>

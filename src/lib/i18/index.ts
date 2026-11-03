@@ -5,14 +5,18 @@ import { initReactI18next } from "react-i18next";
 // French
 import frCommon from "./locales/fr/common.json";
 import frHome from "./locales/fr/home.json";
+import frPricing from "./locales/fr/pricing.json";
+
 
 // English
 import enCommon from "./locales/en/common.json";
 import enHome from "./locales/en/home.json";
+import enPricing from "./locales/en/pricing.json";
 
 // Bangla
 import bnCommon from "./locales/bn/common.json";
 import bnHome from "./locales/bn/home.json";
+import bnPricing from "./locales/bn/pricing.json";
 
 // Get saved language
 const savedLanguage = localStorage.getItem("i18nextLng");
@@ -23,16 +27,19 @@ i18n
     resources: {
       fr: {
         common: frCommon,
-        home:frHome
+        home:frHome,
+        pricing:frPricing
 
       },
       en: {
         common: enCommon,
-        home:enHome
+        home:enHome,
+        pricing:enPricing
       },
       bn: {
         common: bnCommon,
-        home:bnHome
+        home:bnHome,
+        pricing:bnPricing
       },
     },
 

@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "badge": "From CHF 9.–",
+    "title": "Simple and transparent pricing",
+    "description": "Pay only for what you need. No subscription.",
+    "buttonText": "Choose your pack"
+  },
+  "aiCredits": {
+    "title": "Get AI enhancement credits",
+    "subtitle": "Refine your listing with premium tones, expert optimization, or targeted styles.",
+    "plans": [
+      {
+        "name": "MINI-PACK",
+        "description": "Perfect for a single property sale or rental.",
+        "credits": "3 credits",
+        "price": "1.50 CHF",
+        "subPrice": "ONLY 0.50 CHF / CREDIT",
+        "features": [
+          "1 Professional Real Estate Listing",
+          "Instant AI Generation",
+          "Fully editable content",
+          "No monthly subscription",
+          "Swiss market optimized"
+        ],
+        "buttonText": "Start now",
+        "isPopular": false
+      },
+      {
+        "name": "STARTER PACK",
+        "description": "Perfect for a single property sale or rental.",
+        "credits": "7 credits",
+        "price": "3.15 CHF",
+        "subPrice": "ONLY 0.45 CHF / CREDIT",
+        "features": [
+          "See homepage comment",
+          "High-end styles included",
+          "Fully editable content",
+          "No monthly subscription",
+          "Swiss market optimized"
+        ],
+        "buttonText": "Start now",
+        "isPopular": false
+      },
+      {
+        "name": "PRO PACK",
+        "badge": "BEST VALUE",
+        "description": "Best value for individuals...",
+        "credits": "15 credits",
+        "price": "6.00 CHF",
+        "subPrice": "ONLY 0.40 CHF / CREDIT",
+        "features": [
+          "See homepage comment",
+          "Instant AI Generation",
+          "Fully editable content",
+          "No monthly subscription",
+          "Save on every listing"
+        ],
+        "buttonText": "Start now",
+        "isPopular": true
+      }
+    ]
+  }
+}

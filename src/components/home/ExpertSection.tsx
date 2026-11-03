@@ -39,12 +39,12 @@ const ExpertSection: React.FC = () => {
   const { t } = useTranslation('home');
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF9F7] py-12 sm:py-16 lg:py-20">
+    <section className="relative overflow-hidden bg-[#FAF9F7] py-10 sm:py-12 lg:py-section">
       <div className="container mx-auto px-4  lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-10 ">
           {/* Left Side */}
           <div className="lg:col-span-6 space-y-6 sm:space-y-7 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold tracking-tight text-[#2F3745] leading-[1.3] max-w-xl mx-auto lg:mx-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold tracking-tight text-primaryText leading-[1.3] max-w-xl mx-auto lg:mx-0">
               {t('expertSection.title')}
             </h2>
 
@@ -52,7 +52,7 @@ const ExpertSection: React.FC = () => {
             <div className="inline-flex items-center gap-4 pl-4 pr-8 py-3 rounded-xl bg-white border border-[#EEEEEE] shadow-[0_2px_10px_rgba(0,0,0,0.06)] text-left">
               <ShieldCheck className="w-11 h-12 text-myprimary shrink-0" />
               <div className="space-y-1">
-                <h4 className="text-lg sm:text-xl font-bold text-[#2F3745] leading-tight">
+                <h4 className="text-lg sm:text-xl font-bold text-primaryText leading-tight">
                   {t('expertSection.badgeTitle')}
                 </h4>
                 <p className="flex items-center gap-2 text-sm text-secondaryText font-poppins">

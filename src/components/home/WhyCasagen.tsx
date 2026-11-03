@@ -51,7 +51,7 @@ const WhyCasagen: React.FC = () => {
                   {/* Faded watermark number */}
                   <span
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 flex select-none items-center justify-center whitespace-nowrap text-5xl font-extrabold text-myprimary/10 sm:text-6xl"
+                    className="pointer-events-none absolute inset-0 flex select-none items-center justify-center whitespace-nowrap text-5xl font-extrabold text-myprimary/10 sm:text-5xl"
                   >
                     {t(`whyCasagen.stat${n}Title`)}
                   </span>

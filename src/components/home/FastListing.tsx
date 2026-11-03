@@ -53,10 +53,10 @@ const FastListing: React.FC = () => {
       </div>
 
       <div className="container relative z-10 px-4 sm:px-6 lg:px-10 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 ">
           {/* Left Side: Title & Checkpoints */}
           <div className="lg:col-span-6 space-y-6 sm:space-y-8 text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight text-[#222831] leading-[1.2] max-w-md mx-auto lg:mx-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-primaryText leading-[1.2] max-w-md mx-auto lg:mx-0">
               {t('fastListing.title')}
             </h2>
 
@@ -82,7 +82,7 @@ const FastListing: React.FC = () => {
 
               {/* Pricing Title & Description */}
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#222831]">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-primaryText">
                   {t('fastListing.pricingTitle')}
                 </h3>
                 <p className="text-xs sm:text-sm text-secondaryText font-poppins leading-relaxed max-w-sm mx-auto">

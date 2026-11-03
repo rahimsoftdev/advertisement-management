@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "badge": "À partir de CHF 9.–",
+    "title": "Tarification simple et transparente",
+    "description": "Payez uniquement ce dont vous avez besoin. Pas d'abonnement.",
+    "buttonText": "Choisissez votre pack"
+  },
+  "aiCredits": {
+    "title": "Obtenez des crédits d'amélioration de l'IA",
+    "subtitle": "Affinez votre annonce avec des tons premium, une optimisation experte ou des styles ciblés.",
+    "plans": [
+      {
+        "name": "MINI-PACK",
+        "description": "Parfait pour une vente ou une location de propriété individuelle.",
+        "credits": "3 crédits",
+        "price": "1.50 CHF",
+        "subPrice": "SEULEMENT 0.50 CHF / CRÉDIT",
+        "features": [
+          "1 Annonce Immobilier Professionnel",
+          "Génération instantanée d'IA",
+          "Contenu entièrement modifiable",
+          "Pas d'abonnement mensuel",
+          "Marché suisse optimisé"
+        ],
+        "buttonText": "Commencez maintenant",
+        "isPopular": false
+      },
+      {
+        "name": "PACK DE DÉMARRAGE",
+        "description": "Parfait pour une vente ou une location de propriété individuelle.",
+        "credits": "7 crédits",
+        "price": "3.15 CHF",
+        "subPrice": "SEULEMENT 0.45 CHF / CRÉDIT",
+        "features": [
+          "voir commentaire sur page accueil",
+          "Styles haut de gamme inclus",
+          "Contenu entièrement modifiable",
+          "Pas d'abonnement mensuel",
+          "Marché suisse optimisé"
+        ],
+        "buttonText": "Commencez maintenant",
+        "isPopular": false
+      },
+      {
+        "name": "PACK PRO",
+        "badge": "LE PLUS AVANTAGEUX",
+        "description": "Meilleur rapport qualité-prix pour les parti...",
+        "credits": "15 crédits",
+        "price": "6.00 CHF",
+        "subPrice": "SEULEMENT 0.40 CHF / CRÉDIT",
+        "features": [
+          "voir commentaire sur page accueil",
+          "Génération instantanée d'IA",
+          "Contenu entièrement modifiable",
+          "Pas d'abonnement mensuel",
+          "Economisez sur chaque annonce"
+        ],
+        "buttonText": "Commencez maintenant",
+        "isPopular": true
+      }
+    ]
+  }
+}
