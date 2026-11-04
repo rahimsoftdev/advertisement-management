@@ -8,28 +8,34 @@
       "title": "Étape 1. Général et emplacement",
       "emplacement_label": "EMPLACEMENT",
       "emplacement_placeholder": "Entrez la ville ou le quartier",
+      "emplacement_hint": "p.ex. Lausanne, centre ville",
       "type_propriete_label": "TYPE DE PROPRIÉTÉ",
       "surface_label": "SURFACE",
-      "nombre_pieces_label": "NOMBRE DE PIECES (facultatif)",
-      "nombre_pieces_placeholder": "Entrez les numéros de chambre",
-      "etage_label": "ETAGE (facultatif)",
-      "ascenseur_label": "ASCENSEUR (en option)"
+      "surface_hint": "M2",
+      "nombre_pieces_label": "NOMBRE DE PIÈCES",
+      "nombre_pieces_placeholder": "Entrez le nombre de pièces",
+      "nombre_pieces_hint": "p.ex. 3.5",
+      "etage_label": "ÉTAGE",
+      "etage_hint": "p.ex. 1er étage, rez-de-chaussée",
+      "ascenseur_label": "ASCENSEUR",
+      "basic_note": "Plus vous renseignez de détails, plus votre annonce sera précise."
     },
     "step2": {
       "title": "Étape 2. Loyer et prix",
-      "loyer_net_label": "LOYER NET (CHF) *",
-      "charge_label": "Charge",
+      "loyer_net_label": "LOYER NET (CHF)",
+      "charge_label": "CHARGES",
       "exclu_label": "Exclu",
-      "parking_label": "PARKING (facultatif)",
-      "prix_label": "Prix"
+      "parking_label": "PARKING",
+      "prix_label": "PRIX"
     },
     "step3": {
       "title": "Étape 3. Confort & Équipement",
-      "condition_label": "CONDITION *",
+      "condition_label": "CONDITION",
       "condition_placeholder": "Sélectionnez l'état de la propriété",
-      "exposition_label": "EXPOSITION *",
+      "exposition_label": "EXPOSITION",
       "exposition_placeholder": "Sélectionnez l'exposition de la propriété",
-      "equipement_title": "ÉQUIPEMENT ET CARACTÉRISTIQUES (en option)",
+      "equipement_title": "ÉQUIPEMENT ET CARACTÉRISTIQUES",
+      "equip_hint": "Cochez tout ce qui s'applique ou ajoutez le vôtre",
       "colonne_lavage": "Colonne de lavage",
       "cuisine_equipee": "Cuisine équipée",
       "balcon": "Balcon",
@@ -39,20 +45,42 @@
     },
     "step4": {
       "title": "Étape 4 : Conditions et proximité",
-      "disponible_label": "Disponible à partir de (facultatif)",
-      "disponible_placeholder": "p.ex immédiat ou 01.10.2024",
-      "animaux_label": "Animaux autorisés (facultatif)",
-      "proximité_label": "Proximité (facultatif)",
-      "proximité_placeholder": "p.ex supermarché à 3 min, pharmacie, centre ville, plage..."
+      "disponible_label": "DISPONIBLE À PARTIR DE",
+      "disponible_placeholder": "p.ex. immédiat ou 01.10.2024",
+      "animaux_label": "ANIMAUX AUTORISÉS",
+      "proximité_label": "PROXIMITÉ",
+      "proximité_placeholder": "p.ex. supermarché à 3 min, pharmacie, centre ville, plage..."
     },
     "step5": {
       "title": "Étape 5. Médias et informations complémentaires",
       "upload_title": "Ajoutez vos plus belles photos",
       "upload_subtitle": "Téléchargement de la simulation en cours...",
-      "upload_hint": "Glisser-déposer - ajoutez vos meilleures photos (prend en charge 5 à 15 images)",
-      "info_comp_label": "INFORMATIONS COMPLÉMENTAIRES (facultatif)",
-      "info_comp_placeholder": "Ecrivez quelques mots sur ce qui rend votre bien unique..."
+      "upload_hint": "Glisser-déposer - ajoutez vos meilleures photos (5 à 15 images)",
+      "info_comp_label": "INFORMATIONS COMPLÉMENTAIRES",
+      "info_comp_placeholder": "Écrivez quelques mots sur ce qui rend votre bien unique..."
     }
+  },
+  "options": {
+    "type": {
+      "appartement": "Appartement", "maison": "Maison", "studio": "Studio", "villa": "Villa",
+      "duplex": "Duplex", "attique": "Attique", "local": "Local commercial"
+    },
+    "condition": {
+      "neuf": "Neuf", "renove": "Rénové", "tres_bon": "Très bon état", "bon": "Bon état", "a_renover": "À rénover"
+    },
+    "exposition": {
+      "nord": "Nord", "sud": "Sud", "est": "Est", "ouest": "Ouest",
+      "sud_est": "Sud-Est", "sud_ouest": "Sud-Ouest", "traversant": "Traversant"
+    },
+    "parking": {
+      "aucun": "Aucun", "exterieure": "Place extérieure", "garage_ind": "Garage individuel", "garage_col": "Garage collectif"
+    },
+    "animaux": { "oui": "Oui", "non": "Non", "demande": "Sur demande" }
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "images_min": "Ajoutez au moins {{count}} photos",
+    "equip_min": "Sélectionnez au moins un équipement ou écrivez-en un"
   },
   "preview": {
     "ready_title": "Votre annonce est prête.",
@@ -62,25 +90,33 @@
     "apercu_label": "APERÇU DE L'ANNONCE GÉNÉRÉE",
     "lang_badge": "FRANÇAIS / SUISSE ROMANDE",
     "copy_btn": "Copier le texte",
+    "copied": "Copié !",
     "download_pdf_btn": "Télécharger le PDF",
+    "loading": "Affiner votre annonce...",
+    "your_credits": "Vos crédits",
+    "generate_with_ai": "Générer avec l'IA",
+    "cost_tag": "-1 CR",
     "modal": {
       "title": "Débloquez votre annonce professionnelle",
-      "description": "Débloquez votre annonce professionnelle. Accédez immédiatement à une annonce immobilière claire, structurée et convaincante, adaptée au marché suisse.",
+      "description": "Accédez immédiatement à une annonce immobilière claire, structurée et convaincante, adaptée au marché suisse.",
       "pay_btn": "Débloquez avec 9.90 CHF"
     },
     "quality_level": {
       "title": "Niveau de qualité",
       "status": "BASIQUE",
+      "status_good": "BON",
+      "status_excellent": "EXCELLENT",
       "percentage": "40%",
       "suggestions_title": "SUGGESTIONS",
       "sug1": "Mentionnez si une connexion Internet à haut débit est disponible",
-      "sug2": "Ajouter plus de détails sur le transport local",
-      "sug3": "Création du balcon Spécify",
+      "sug2": "Ajoutez plus de détails sur les transports locaux",
+      "sug3": "Précisez les détails du balcon",
       "sug4": "Avis professionnel recommandé"
     },
     "ai_options": {
       "title": "Options de modification de l'IA",
       "credits_tag": "crédits",
+      "note": "Chaque changement coûte 1 crédit.",
       "btn1": "Rendez-le plus premium",
       "btn2": "Ajoutez un ton plus chaud",
       "btn3": "Raccourcir le texte",
@@ -101,6 +137,51 @@
       "warning_desc": "Continuez à améliorer votre annonce pour maximiser vos chances",
       "btn": "Obtenez plus de crédits"
     }
+  },
+  "ai": {
+    "premium": "✦ Une adresse d'exception, des prestations haut de gamme.",
+    "warm": "Venez vous sentir chez vous dans un lieu chaleureux et lumineux, pensé pour votre bien-être.",
+    "location": "EMPLACEMENT : quartier recherché, commerces, transports publics et écoles à quelques minutes.",
+    "investor": "POUR INVESTISSEURS : excellent potentiel locatif et rendement attractif dans un secteur très demandé.",
+    "airbnb": "IDÉAL AIRBNB : logement prêt à accueillir des voyageurs, emplacement central et forte demande touristique."
+  },
+  "listing": {
+    "title": "TITRE : {{type}} de {{rooms}} pièces à {{where}}",
+    "hook": "Charmant {{type}} idéalement situé à {{where}}, offrant un cadre de vie paisible et fonctionnel.",
+    "exposure": "Exposition {{expo}}.",
+    "floor": "Étage : {{etage}}.",
+    "elevator_yes": "L'immeuble dispose d'un ascenseur.",
+    "elevator_no": "Immeuble sans ascenseur.",
+    "condition": "État : {{condition}}.",
+    "equip": "ÉQUIPEMENTS : {{list}}.",
+    "practical": "INFORMATIONS PRATIQUES : Surface : {{surface}} m² · Loyer net : CHF {{loyer}}.- · Charges : CHF {{charge}}.-{{excl}} · Prix : CHF {{prix}} · Parking : {{parking}} · Animaux : {{animaux}}.",
+    "excl": " (exclues)",
+    "proximity": "PROXIMITÉ : {{proximite}}.",
+    "availability": "DISPONIBILITÉ : {{dispo}}. N'attendez plus pour organiser une visite !"
+  },
+  "submit": {
+    "title": "Récapitulatif de votre propriété",
+    "btn": "Soumettre",
+    "confirm_title": "Confirmer la soumission ?",
+    "confirm_desc": "Votre annonce sera générée à partir de ces informations.",
+    "confirm_btn": "Confirmer",
+    "success_title": "Soumission réussie !",
+    "success_desc": "Votre annonce est prête. Découvrez l'aperçu.",
+    "see_preview": "Voir l'aperçu",
+    "rooms": "pièces",
+    "photos": "photo(s)"
+  },
+  "edit": {
+    "save": "Enregistrer",
+    "success_title": "Modifications enregistrées",
+    "success_desc": "Votre annonce a été mise à jour avec succès.",
+    "close": "Fermer"
+  },
+  "new": {
+    "btn": "Nouvelle annonce",
+    "title": "Recommencer à zéro ?",
+    "desc": "Toutes les informations, photos et l'annonce générée seront supprimées. Vous pourrez ensuite saisir de nouvelles données.",
+    "confirm": "Oui, tout supprimer"
   },
   "navigation": {
     "retour": "Retour",

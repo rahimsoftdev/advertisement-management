@@ -1,4 +1,3 @@
-
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -10,6 +9,7 @@ import frAuth from "./locales/fr/auth.json";
 import frAbout from "./locales/fr/about.json";
 import frhowwork from "./locales/fr/howwoork.json";
 import frPrivacy from "./locales/fr/privacy.json";
+import frAnnouncement from "./locales/fr/announcement.json";
 
 
 
@@ -21,6 +21,8 @@ import enAuth from "./locales/en/auth.json";
 import enAbout from "./locales/en/about.json";
 import enhowwork from "./locales/en/howwoork.json";
 import enPrivacy from "./locales/en/privacy.json";
+import enAnnouncement from "./locales/en/announcement.json";
+
 
 
 // Bangla
@@ -31,6 +33,8 @@ import bnAuth from "./locales/bn/auth.json";
 import bnAbout from "./locales/bn/about.json";
 import bnhowwork from "./locales/bn/howwoork.json";
 import bnPrivacy from "./locales/bn/privacy.json";
+import bnAnnouncement from "./locales/bn/announcement.json";
+
 
 
 
@@ -49,7 +53,8 @@ i18n
         auth:frAuth,
         about:frAbout,
         howwork:frhowwork,
-        legal:frPrivacy
+        legal:frPrivacy,
+        announcement:frAnnouncement
 
       },
       en: {
@@ -59,7 +64,8 @@ i18n
         auth:enAuth,
         about:enAbout,
         howwork:enhowwork,
-        legal:enPrivacy
+        legal:enPrivacy,
+        announcement:enAnnouncement
       },
       bn: {
         common: bnCommon,
@@ -68,7 +74,8 @@ i18n
         auth:bnAuth,
         about:bnAbout,
         howwork:bnhowwork,
-        legal:bnPrivacy
+        legal:bnPrivacy,
+        announcement:bnAnnouncement
       },
     },
 
@@ -81,7 +88,8 @@ i18n
 
     interpolation: {
       escapeValue: false,
-    },
+    }
+    
   });
 
 export default i18n;

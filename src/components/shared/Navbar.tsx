@@ -192,7 +192,7 @@ const Navbar = () => {
     setUserInfo(null);
     window.dispatchEvent(new Event("authChange"));
     setIsOpen(false);
-    navigate("/");
+    navigate("/login");
   };
 
   // Login/logout hole ba onno tab e change hole navbar update hobe

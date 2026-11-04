@@ -24,7 +24,7 @@ const AiCreditsPricing: React.FC = () => {
     const plans = t('aiCredits.plans', { returnObjects: true }) as Plan[];
 
     return (
-        <section className="relative overflow-hidden bg-[#FAF9F7] py-12 sm:py-16 lg:py-section">
+        <section id='credits' className="relative overflow-hidden bg-[#FAF9F7] py-12 sm:py-16 lg:py-section">
             <div className="container mx-auto px-4 lg:px-10">
 
                 {/* Section Header (left aligned) */}

@@ -7,100 +7,181 @@
     "step1": {
       "title": "Step 1. General and location",
       "emplacement_label": "LOCATION",
-      "emplacement_placeholder": "Enter city or neighborhood",
+      "emplacement_placeholder": "Enter the city or neighbourhood",
+      "emplacement_hint": "e.g. Lausanne, city centre",
       "type_propriete_label": "PROPERTY TYPE",
       "surface_label": "SURFACE",
-      "nombre_pieces_label": "NUMBER OF ROOMS (optional)",
-      "nombre_pieces_placeholder": "Enter room numbers",
-      "etage_label": "FLOOR (optional)",
-      "ascenseur_label": "ELEVATOR (optional)"
+      "surface_hint": "M2",
+      "nombre_pieces_label": "NUMBER OF ROOMS",
+      "nombre_pieces_placeholder": "Enter the number of rooms",
+      "nombre_pieces_hint": "e.g. 3.5",
+      "etage_label": "FLOOR",
+      "etage_hint": "e.g. 1st floor, ground floor",
+      "ascenseur_label": "ELEVATOR",
+      "basic_note": "The more details you provide, the more accurate your listing will be."
     },
     "step2": {
       "title": "Step 2. Rent and price",
-      "loyer_net_label": "NET RENT (CHF) *",
-      "charge_label": "Charges",
+      "loyer_net_label": "NET RENT (CHF)",
+      "charge_label": "CHARGES",
       "exclu_label": "Excluded",
-      "parking_label": "PARKING (optional)",
-      "prix_label": "Price"
+      "parking_label": "PARKING",
+      "prix_label": "PRICE"
     },
     "step3": {
       "title": "Step 3. Comfort & Equipment",
-      "condition_label": "CONDITION *",
-      "condition_placeholder": "Select property condition",
-      "exposition_label": "ORIENTATION *",
-      "exposition_placeholder": "Select property orientation",
-      "equipement_title": "EQUIPMENT AND FEATURES (optional)",
+      "condition_label": "CONDITION",
+      "condition_placeholder": "Select the condition of the property",
+      "exposition_label": "EXPOSURE",
+      "exposition_placeholder": "Select the exposure of the property",
+      "equipement_title": "EQUIPMENT AND FEATURES",
+      "equip_hint": "Tick everything that applies or add your own",
       "colonne_lavage": "Washing column",
-      "cuisine_equipee": "Equipped kitchen",
+      "cuisine_equipee": "Fitted kitchen",
       "balcon": "Balcony",
       "cave": "Cellar",
       "jardin": "Garden",
       "autres_placeholder": "Others (separated by commas)"
     },
     "step4": {
-      "title": "Step 4: Conditions and proximity",
-      "disponible_label": "Available from (optional)",
-      "disponible_placeholder": "e.g. immediate or 01.10.2024",
-      "animaux_label": "Pets allowed (optional)",
-      "proximité_label": "Proximity (optional)",
-      "proximité_placeholder": "e.g. supermarket 3 min away, pharmacy, city center, beach..."
+      "title": "Step 4: Conditions and surroundings",
+      "disponible_label": "AVAILABLE FROM",
+      "disponible_placeholder": "e.g. immediately or 01.10.2024",
+      "animaux_label": "PETS ALLOWED",
+      "proximité_label": "NEARBY",
+      "proximité_placeholder": "e.g. supermarket 3 min away, pharmacy, city centre, beach..."
     },
     "step5": {
       "title": "Step 5. Media and additional information",
       "upload_title": "Add your best photos",
-      "upload_subtitle": "Downloading simulation in progress...",
-      "upload_hint": "Drag and drop - add your best photos (supports 5 to 15 images)",
-      "info_comp_label": "ADDITIONAL INFORMATION (optional)",
+      "upload_subtitle": "Upload simulation in progress...",
+      "upload_hint": "Drag & drop - add your best photos (5 to 15 images)",
+      "info_comp_label": "ADDITIONAL INFORMATION",
       "info_comp_placeholder": "Write a few words about what makes your property unique..."
     }
   },
+  "options": {
+    "type": {
+      "appartement": "Apartment", "maison": "House", "studio": "Studio", "villa": "Villa",
+      "duplex": "Duplex", "attique": "Penthouse", "local": "Commercial space"
+    },
+    "condition": {
+      "neuf": "New", "renove": "Renovated", "tres_bon": "Very good condition", "bon": "Good condition", "a_renover": "To renovate"
+    },
+    "exposition": {
+      "nord": "North", "sud": "South", "est": "East", "ouest": "West",
+      "sud_est": "South-East", "sud_ouest": "South-West", "traversant": "Dual aspect"
+    },
+    "parking": {
+      "aucun": "None", "exterieure": "Outdoor space", "garage_ind": "Private garage", "garage_col": "Shared garage"
+    },
+    "animaux": { "oui": "Yes", "non": "No", "demande": "On request" }
+  },
+  "validation": {
+    "required": "This field is required",
+    "images_min": "Add at least {{count}} photos",
+    "equip_min": "Select at least one feature or write your own"
+  },
   "preview": {
     "ready_title": "Your listing is ready.",
-    "ready_subtitle": "You can modify or generate another version.",
-    "modifier_btn": "Modify",
-    "unlock_full_btn": "Unlock complete listing",
+    "ready_subtitle": "You can edit it or generate another version.",
+    "modifier_btn": "Edit",
+    "unlock_full_btn": "Unlock the full listing",
     "apercu_label": "GENERATED LISTING PREVIEW",
-    "lang_badge": "FRENCH / SWISS ROMANDY",
+    "lang_badge": "ENGLISH / SWITZERLAND",
     "copy_btn": "Copy text",
+    "copied": "Copied!",
     "download_pdf_btn": "Download PDF",
+    "loading": "Refining your listing...",
+    "your_credits": "Your credits",
+    "generate_with_ai": "Generate with AI",
+    "cost_tag": "-1 CR",
     "modal": {
       "title": "Unlock your professional listing",
-      "description": "Unlock your professional listing. Get immediate access to a clear, structured, and convincing real estate listing tailored to the Swiss market.",
-      "pay_btn": "Unlock with 9.90 CHF"
+      "description": "Get instant access to a clear, well-structured and convincing real-estate listing, tailored to the Swiss market.",
+      "pay_btn": "Unlock for CHF 9.90"
     },
     "quality_level": {
       "title": "Quality level",
       "status": "BASIC",
+      "status_good": "GOOD",
+      "status_excellent": "EXCELLENT",
       "percentage": "40%",
       "suggestions_title": "SUGGESTIONS",
-      "sug1": "Mention if high-speed internet connection is available",
-      "sug2": "Add more details on local transport",
-      "sug3": "Creation of the balcony Specify",
-      "sug4": "Professional advice recommended"
+      "sug1": "Mention whether a high-speed internet connection is available",
+      "sug2": "Add more details about local transport",
+      "sug3": "Specify the balcony details",
+      "sug4": "Professional review recommended"
     },
     "ai_options": {
-      "title": "AI modification options",
+      "title": "AI editing options",
       "credits_tag": "credits",
+      "note": "Each change costs 1 credit.",
       "btn1": "Make it more premium",
       "btn2": "Add a warmer tone",
-      "btn3": "Shorten text",
-      "btn4": "Highlight location more",
-      "btn5": "Optimize for investors",
-      "btn6": "Optimize for AirBnB",
-      "generate_placeholder": "Describe your thoughts and let AI plan them.",
+      "btn3": "Shorten the text",
+      "btn4": "Highlight the location more",
+      "btn5": "Optimise for investors",
+      "btn6": "Optimise for AirBnB",
+      "generate_placeholder": "Describe your thoughts and let the AI shape them.",
       "generate_btn": "Generate"
     },
     "expert_validation": {
       "title": "Expert validation",
-      "description": "Get feedback from a real estate professional for CHF 15.-. Your listing is analyzed and checked to improve its accuracy and credibility.",
+      "description": "Get a real-estate professional's opinion for CHF 15.-. Your listing is analysed and verified to improve its accuracy and credibility.",
       "btn": "Request validation"
     },
     "no_credits": {
       "title": "0 credits",
-      "warning_title": "You have no more credits",
-      "warning_desc": "Continue to improve your listing to maximize your chances",
+      "warning_title": "You have no credits left",
+      "warning_desc": "Keep improving your listing to maximise your chances",
       "btn": "Get more credits"
     }
+  },
+  "ai": {
+    "premium": "✦ An exceptional address with high-end features.",
+    "warm": "Come and feel at home in a warm, bright place designed for your well-being.",
+    "location": "LOCATION: sought-after neighbourhood, shops, public transport and schools just minutes away.",
+    "investor": "FOR INVESTORS: excellent rental potential and attractive yield in a high-demand area.",
+    "airbnb": "IDEAL FOR AIRBNB: ready to welcome guests, central location and strong tourist demand."
+  },
+  "listing": {
+    "title": "TITLE: {{type}} with {{rooms}} rooms in {{where}}",
+    "hook": "Charming {{type}} ideally located in {{where}}, offering a peaceful and functional living environment.",
+    "exposure": "{{expo}} exposure.",
+    "floor": "Floor: {{etage}}.",
+    "elevator_yes": "The building has an elevator.",
+    "elevator_no": "Building without an elevator.",
+    "condition": "Condition: {{condition}}.",
+    "equip": "EQUIPMENT: {{list}}.",
+    "practical": "PRACTICAL INFORMATION: Surface: {{surface}} m² · Net rent: CHF {{loyer}}.- · Charges: CHF {{charge}}.-{{excl}} · Price: CHF {{prix}} · Parking: {{parking}} · Pets: {{animaux}}.",
+    "excl": " (excluded)",
+    "proximity": "NEARBY: {{proximite}}.",
+    "availability": "AVAILABILITY: {{dispo}}. Don't wait any longer to arrange a viewing!"
+  },
+  "submit": {
+    "title": "Summary of your property",
+    "btn": "Submit",
+    "confirm_title": "Confirm submission?",
+    "confirm_desc": "Your listing will be generated from this information.",
+    "confirm_btn": "Confirm",
+    "success_title": "Submitted successfully!",
+    "success_desc": "Your listing is ready. See the preview.",
+    "see_preview": "See the preview",
+    "rooms": "rooms",
+    "photos": "photo(s)"
+  },
+  "edit": {
+    "save": "Save",
+    "success_title": "Changes saved",
+    "success_desc": "Your listing has been updated successfully.",
+    "close": "Close"
+  },
+  "new": {
+    "btn": "New listing",
+    "title": "Start over from scratch?",
+    "desc": "All information, photos and the generated listing will be deleted. You can then enter new data.",
+    "confirm": "Yes, delete everything"
   },
   "navigation": {
     "retour": "Back",
