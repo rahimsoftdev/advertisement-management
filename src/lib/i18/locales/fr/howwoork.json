@@ -1,0 +1,26 @@
+{
+  "section1": {
+    "title": "Décrivez votre propriété",
+    "description": "Une expérience guidée et sans stress pour capturer chaque détail de votre maison.",
+    "bullet1": "Formulaire simple et intuitif, conçu pour le marché suisse",
+    "bullet2": "Assistant intelligent pour renseigner surfaces, pièces et niveaux",
+    "bullet3": "Prise en compte des équipements spécifiques (buanderie, ascenseur, etc.)",
+    "bullet4": "Transformation automatique de vos informations en description immobilière professionnelle"
+  },
+  "section2": {
+    "title": "Laissez Casagen faire le travail",
+    "description": "Laissez Casagen faire le travail Des annonces professionnelles générées grâce à une IA performante et à une véritable expertise immobilière suisse.",
+    "bullet1": "IA entraînée sur des milliers d'annonces immobilières suisses performantes",
+    "bullet2": "Supervisée par un professionnel de l'immobilier (brevet fédéral)",
+    "bullet3": "Génération de descriptions structurées et d'accroches percutantes",
+    "bullet4": "Un ton adapté aux attentes et aux standards du marché suisse"
+  },
+  "section3": {
+    "title": "Publiez votre annonce",
+    "description": "Publiez votre annonce Votre annonce professionnelle est prête à être diffusée en quelques clics.",
+    "bullet1": "Aperçu complet avec possibilité de modifier ou régénérer le texte",
+    "bullet2": "Export en un clic au format PDF pour un partage professionnel",
+    "bullet3": "Copier-coller rapide pour les portails immobiliers",
+    "bullet4": "Des résultats rapides et efficaces pour maximiser votre visibilité"
+  }
+}

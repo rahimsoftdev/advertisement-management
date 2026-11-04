@@ -1,0 +1,26 @@
+{
+  "section1": {
+    "title": "Describe your property",
+    "description": "A guided and stress-free experience to capture every detail of your home.",
+    "bullet1": "Simple and intuitive form designed for the Swiss market",
+    "bullet2": "Smart assistant to fill in surfaces, rooms, and levels",
+    "bullet3": "Takes specific amenities into account (laundry room, elevator, etc.)",
+    "bullet4": "Automatic transformation of your information into a professional real estate description"
+  },
+  "section2": {
+    "title": "Let Casagen do the work",
+    "description": "Let Casagen do the work. Professional listings generated using high-performing AI and genuine Swiss real estate expertise.",
+    "bullet1": "AI trained on thousands of successful Swiss real estate listings",
+    "bullet2": "Supervised by a real estate professional (federal diploma)",
+    "bullet3": "Generation of structured descriptions and punchy hooks",
+    "bullet4": "A tone tailored to the expectations and standards of the Swiss market"
+  },
+  "section3": {
+    "title": "Publish your listing",
+    "description": "Publish your listing. Your professional listing is ready to be shared in just a few clicks.",
+    "bullet1": "Full preview with the option to edit or regenerate the text",
+    "bullet2": "One-click PDF export for professional sharing",
+    "bullet3": "Quick copy-paste for real estate portals",
+    "bullet4": "Fast and effective results to maximize your visibility"
+  }
+}

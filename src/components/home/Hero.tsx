@@ -12,9 +12,8 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className={`relative overflow-hidden ${
-        isHowWork ? "bg-white" : "bg-[#FEFBF4]"
-      }`}
+      className={`relative overflow-hidden ${isHowWork ? "bg-[#FAF9F7] " : "bg-[#FEFBF4]"
+        }`}
     >
       {/* Home only: grid + buildings. /how-work te kichu nai, shudhu white bg */}
       {!isHowWork && (
@@ -37,7 +36,8 @@ const Hero: React.FC = () => {
       {/* Main content.
           Extra bottom padding keeps the center clear so the buildings
           show on the left and right sides, like the design. */}
-      <div className="container relative z-10 mx-auto px-4 pb-10 pt-12 lg:pt-section text-center sm:px-6 sm:pb-16 sm:pt-14 lg:pb-section lg:pt-16 xl:pb-30 2xl:pb-40">
+      <div className={`container relative z-10 mx-auto px-4 pt-12 lg:pt-section text-center sm:px-6 sm:pt-14 lg:pt-16 ${isHowWork ? "" : "pb-10 sm:pb-16 lg:pb-section xl:pb-30 2xl:pb-40"
+        }`}>
         {/* Badge */}
         <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-md bg-gray-200/90 px-3 py-1.5 sm:mb-6">
           <span className="h-2 w-2 shrink-0 rounded-full bg-myprimary" />
