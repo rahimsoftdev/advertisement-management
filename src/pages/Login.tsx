@@ -30,7 +30,7 @@ const DEMO_USERS: DemoUser[] = [
   },
   {
     email: 'rahim123@gmail.com',
-    password: 'rahim4061',
+    password: 'rahim123',
     name: 'Rahim',
     userId: 'user-001',
     role: 'user',

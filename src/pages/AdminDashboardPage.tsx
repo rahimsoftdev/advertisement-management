@@ -698,7 +698,7 @@ export default function AdminDashboardPage() {
     }`;
 
   return (
-    <div className="min-h-screen bg-[#FAF9F7] text-slate-800 p-6 md:p-10">
+    <div className="min-h-screen bg-[#FAF9F7] text-slate-800 py-10 sm:py-12 lg:pb-section">
       <div className="container px-4 lg:px-10 mx-auto space-y-8">
         {/* ── Header ── */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">

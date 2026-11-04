@@ -12,6 +12,7 @@ import MentionsLegalesPage from "../../pages/MentionsLegalesPage"
 import AnnouncementPage from "../../pages/AnnouncementPage"
 import UserDashboardPage from "../../pages/UserDashboardPage"
 import AdminDashboardPage from "../../pages/AdminDashboardPage"
+import DashbaordLayout from "../../layouts/DashbaordLayout"
 
 const router = createBrowserRouter([
     {
@@ -19,43 +20,49 @@ const router = createBrowserRouter([
         Component: MainLayout,
         children: [
             {
-                index:true, Component:HomePage
+                index: true, Component: HomePage
             },
             {
-                path:"pricing", Component:PricingPage
+                path: "pricing", Component: PricingPage
             },
             {
-                path:"about", Component:AboutPage
+                path: "about", Component: AboutPage
             },
             {
-                path:"how-work", Component:HowItWorkPage
+                path: "how-work", Component: HowItWorkPage
             },
             {
-                path:"rolse", Component:MentionsLegalesPage
-            },
-
-
-            {
-                path:"announcement/new", Component:AnnouncementPage
+                path: "rolse", Component: MentionsLegalesPage
             },
 
+
+
+        ]
+    },
+    {
+        path: "/",
+        Component: AuthLayout,
+        children: [
             {
-                path:"/dashboard/user", Component:UserDashboardPage
+                path: "login", Component: Login
             },
             {
-                path:"/dashboard/admin", Component:AdminDashboardPage
+                path: "register", Component: Register
             },
         ]
     },
     {
-        path:"/",
-        Component:AuthLayout,
-        children:[
+        path: '/', Component: DashbaordLayout,
+        children: [
             {
-                path:"login", Component:Login
+                path: "announcement/new", Component: AnnouncementPage
+            },
+
+            {
+                path: "/dashboard/user", Component: UserDashboardPage
             },
             {
-                path:"register", Component:Register
+                path: "/dashboard/admin", Component: AdminDashboardPage
             },
         ]
     }
