@@ -1,7 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
-import { FiMenu, FiX, FiGlobe, FiChevronDown, FiLogOut } from "react-icons/fi";
+import {
+  FiMenu,
+  FiX,
+  FiGlobe,
+  FiChevronDown,
+  FiLogOut,
+  FiCheck,
+} from "react-icons/fi";
 import logo from "../../assets/images/logo.png";
 import { getAuthInfo } from "../../utils/auth";
 
@@ -28,11 +35,116 @@ const getNavbarBg = (pathname: string) => {
   if (path === "/pricing" || path === "/") {
     return "bg-[#FFFCF6]";
   }
-  if(path === "/about"){
-    return 'bg-[#FDFBF5]'
+  if (path === "/about") {
+    return "bg-[#FDFBF5]";
   }
 
   return "bg-white";
+};
+
+// Page-er upore smooth vabe scroll
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+};
+
+// Custom language dropdown (component-er baire rakha, jate Navbar re-render hole
+// open/close state reset na hoy). Width fixed, tai language change hole onno item shift hobe na.
+const LanguageSelect = ({
+  className = "",
+  currentLanguage,
+  onChange,
+  ariaLabel,
+}: {
+  className?: string;
+  currentLanguage: string;
+  onChange: (code: string) => void;
+  ariaLabel: string;
+}) => {
+  const [open, setOpen] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  const current =
+    languages.find((lang) => lang.code === currentLanguage) || languages[0];
+
+  // Baire click korle ba Escape chaple dropdown bondho
+  useEffect(() => {
+    if (!open) return;
+
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(e.target as Node)
+      ) {
+        setOpen(false);
+      }
+    };
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  return (
+    <div ref={wrapperRef} className={`relative ${className}`}>
+      <button
+        type="button"
+        onClick={() => setOpen((prev) => !prev)}
+        aria-label={ariaLabel}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        className={`relative flex h-10 w-full cursor-pointer items-center rounded-lg border bg-transparent pl-9 pr-8 text-left text-sm text-primaryText outline-none transition-colors hover:border-myprimary focus-visible:ring-2 focus-visible:ring-myprimary/20 ${
+          open ? "border-myprimary ring-2 ring-myprimary/20" : "border-gray-200"
+        }`}
+      >
+        <FiGlobe className="pointer-events-none absolute left-3 text-base text-primaryText" />
+        <span className="truncate">{current.label}</span>
+        <FiChevronDown
+          className={`pointer-events-none absolute right-3 text-sm text-secondaryText transition-transform duration-200 ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {open && (
+        <ul
+          role="listbox"
+          aria-label={ariaLabel}
+          className="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border border-gray-100 bg-white p-1 shadow-lg"
+        >
+          {languages.map((lang) => {
+            const isSelected = lang.code === current.code;
+            return (
+              <li key={lang.code} role="option" aria-selected={isSelected}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onChange(lang.code);
+                    setOpen(false);
+                  }}
+                  className={`flex w-full cursor-pointer items-center justify-between gap-2 rounded-md px-3 py-2 text-left text-sm transition-colors ${
+                    isSelected
+                      ? "bg-myprimary/10 font-semibold text-myprimary"
+                      : "text-primaryText hover:bg-myprimary/5 hover:text-myprimary"
+                  }`}
+                >
+                  <span className="truncate">{lang.label}</span>
+                  {isSelected && <FiCheck className="shrink-0 text-base" />}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
 };
 
 const Navbar = () => {
@@ -58,12 +170,16 @@ const Navbar = () => {
     { name: t("navbar.rolse"), path: "/rolse" },
   ];
 
-  const handleLanguageChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    const language = event.target.value;
+  const handleLanguageChange = (language: string) => {
     i18n.changeLanguage(language);
     localStorage.setItem("i18nextLng", language);
+  };
+
+  // Link e click korle: menu bondho + page-er upore smooth scroll
+  // (same page-er link e click korleo upore jabe)
+  const handleNavClick = () => {
+    setIsOpen(false);
+    scrollToTop();
   };
 
   // Logout: localStorage theke user info remove kore home e pathabe
@@ -102,9 +218,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
+  // Route change hole mobile menu bondho + notun page-er upore smooth scroll
   useEffect(() => {
     setIsOpen(false);
+
+    // Mobile menu-r body scroll lock chhere dewar por scroll korar jonno ektu delay
+    const timer = window.setTimeout(scrollToTop, 50);
+    return () => window.clearTimeout(timer);
   }, [location.pathname]);
 
   // Lock body scroll + close on Escape while the mobile menu is open
@@ -151,28 +271,6 @@ const Navbar = () => {
         : "border-transparent font-medium text-primaryText hover:bg-myprimary/5 hover:text-myprimary"
     }`;
 
-  // Fixed-width language selector so changing language never shifts other items
-  const LanguageSelect = ({ className = "" }: { className?: string }) => (
-    <div
-      className={`relative flex h-10 items-center rounded-lg border border-gray-200 bg-transparent transition-colors focus-within:border-myprimary focus-within:ring-2 focus-within:ring-myprimary/20 hover:border-myprimary ${className}`}
-    >
-      <FiGlobe className="pointer-events-none absolute left-3 text-base text-primaryText" />
-      <select
-        value={currentLanguage}
-        onChange={handleLanguageChange}
-        aria-label={t("navbar.language")}
-        className="h-full w-full cursor-pointer appearance-none bg-transparent pl-9 pr-8 text-sm text-primaryText outline-none"
-      >
-        {languages.map((lang) => (
-          <option key={lang.code} value={lang.code}>
-            {lang.label}
-          </option>
-        ))}
-      </select>
-      <FiChevronDown className="pointer-events-none absolute right-3 text-sm text-secondaryText" />
-    </div>
-  );
-
   // Login button: myprimary border + text, fills with myprimary on hover
   const loginClass =
     "inline-flex h-10 min-w-[84px] items-center justify-center whitespace-nowrap rounded-lg border border-myprimary px-4 text-sm font-medium text-myprimary transition hover:bg-myprimary hover:text-white active:scale-95 xl:text-base";
@@ -196,7 +294,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink
           to="/"
-          onClick={() => setIsOpen(false)}
+          onClick={handleNavClick}
           className="flex shrink-0 items-center"
           aria-label="Home"
         >
@@ -214,6 +312,7 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               end={link.path === "/"}
+              onClick={handleNavClick}
               className={desktopLinkClass}
             >
               {link.name}
@@ -223,7 +322,12 @@ const Navbar = () => {
 
         {/* Desktop Actions */}
         <div className="hidden items-center gap-2 lg:flex xl:gap-3">
-          <LanguageSelect className="w-[140px]" />
+          <LanguageSelect
+            className="w-[140px]"
+            currentLanguage={currentLanguage}
+            onChange={handleLanguageChange}
+            ariaLabel={t("navbar.language")}
+          />
 
           {userInfo ? (
             // Login kora thakle: shudhu Logout button
@@ -234,11 +338,19 @@ const Navbar = () => {
           ) : (
             // Login kora na thakle: Login + Register
             <>
-              <NavLink to="/login" className={loginClass}>
+              <NavLink
+                to="/login"
+                onClick={handleNavClick}
+                className={loginClass}
+              >
                 {t("navbar.login")}
               </NavLink>
 
-              <NavLink to="/register" className={registerClass}>
+              <NavLink
+                to="/register"
+                onClick={handleNavClick}
+                className={registerClass}
+              >
                 {t("navbar.register")}
               </NavLink>
             </>
@@ -279,7 +391,7 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   end={link.path === "/"}
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleNavClick}
                   className={mobileLinkClass}
                 >
                   {link.name}
@@ -290,7 +402,12 @@ const Navbar = () => {
             <div className="my-4 border-t border-gray-100" />
 
             {/* Mobile Language Selector */}
-            <LanguageSelect className="w-full" />
+            <LanguageSelect
+              className="w-full"
+              currentLanguage={currentLanguage}
+              onChange={handleLanguageChange}
+              ariaLabel={t("navbar.language")}
+            />
 
             {userInfo ? (
               // Login kora thakle: shudhu Logout button
@@ -309,7 +426,7 @@ const Navbar = () => {
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <NavLink
                   to="/login"
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleNavClick}
                   className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary px-4 text-center text-sm font-medium text-myprimary transition hover:bg-myprimary hover:text-white sm:text-base"
                 >
                   {t("navbar.login")}
@@ -317,7 +434,7 @@ const Navbar = () => {
 
                 <NavLink
                   to="/register"
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleNavClick}
                   className="inline-flex h-11 items-center justify-center rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
                 >
                   {t("navbar.register")}

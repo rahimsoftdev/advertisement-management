@@ -5,6 +5,7 @@ export interface AuthInfo {
   name: string;
   userId: string;
   role: Role;
+  credit: number
 }
 
 const AUTH_KEY = 'authInfo';
@@ -12,7 +13,7 @@ const AUTH_KEY = 'authInfo';
 /**
  * localStorage theke user info niye ashe.
  * - Na thakle ba data vul hole  -> null
- * - Thakle                      -> AuthInfo object
+ * - Thakle                      -> AuthInfo object (credit: 1 shoho)
  */
 export const getAuthInfo = (): AuthInfo | null => {
   try {
@@ -29,7 +30,7 @@ export const getAuthInfo = (): AuthInfo | null => {
       typeof data.userId === 'string' &&
       (data.role === 'admin' || data.role === 'user')
     ) {
-      return data as AuthInfo;
+      return { ...data, credit: 1 } as AuthInfo;
     }
 
     return null;
