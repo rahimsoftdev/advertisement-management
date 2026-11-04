@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router";
+import { Link, NavLink, useLocation, useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 import {
   FiMenu,
@@ -27,7 +27,8 @@ const getNavbarBg = (pathname: string) => {
   if (
     path === "/login" ||
     path === "/register" ||
-    path === "/announcement/new"
+    path === "/announcement/new" || 
+    path === '/dashboard/user'
   ) {
     return "bg-[#FAF9F7]";
   }
@@ -330,11 +331,11 @@ const Navbar = () => {
           />
 
           {userInfo ? (
-            // Login kora thakle: shudhu Logout button
-            <button type="button" onClick={handleLogout} className={logoutClass}>
-              <FiLogOut className="text-base" />
-              <span>{t("navbar.logout")}</span>
-            </button>
+            
+            <Link to={'dashboard/user'} className={logoutClass}>
+              
+              <span>{t("navbar.dashboard")}</span>
+            </Link>
           ) : (
             // Login kora na thakle: Login + Register
             <>
@@ -412,14 +413,14 @@ const Navbar = () => {
             {userInfo ? (
               // Login kora thakle: shudhu Logout button
               <div className="mt-4">
-                <button
-                  type="button"
-                  onClick={handleLogout}
+                <Link
+                  
+                to={'dashboard/user'}
                   className="inline-flex h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
                 >
-                  <FiLogOut className="text-base" />
-                  <span>{t("navbar.logout")}</span>
-                </button>
+                 
+                  <span>{t("navbar.dashboard")}</span>
+                </Link>
               </div>
             ) : (
               // Login kora na thakle: Login + Register

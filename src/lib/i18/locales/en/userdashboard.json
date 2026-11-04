@@ -1,0 +1,23 @@
+{
+  "user_workspace_tag": "User Workspace",
+  "welcome_prefix": "Welcome",
+  "subtitle": "Enter the details below. Casagen transforms your listing into a professional advertisement.",
+  "buttons": {
+    "create_announcement": "Create an announcement",
+    "logout": "Log out"
+  },
+  "stats": {
+    "total_announcements": "TOTAL ANNOUNCEMENTS",
+    "credits": "CREDITS",
+    "pending_reviews": "PENDING REVIEWS",
+    "plan_label": "Plan",
+    "free_plan": "Free"
+  },
+  "created_announcements": {
+    "title": "List of created announcements",
+    "subtitle": "List of created announcements",
+    "active_session": "ACTIVE SESSION",
+    "status_ready": "READY",
+    "project_ia_label": "AI PROJECT"
+  }
+}

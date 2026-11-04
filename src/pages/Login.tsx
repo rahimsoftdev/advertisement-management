@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { FcGoogle } from 'react-icons/fc';
 import { FiEye, FiEyeOff, FiCheckCircle, FiAlertCircle } from 'react-icons/fi';
@@ -225,12 +225,12 @@ const Login: React.FC = () => {
               {t('login.submitButton')}
             </button>
 
-            <a
-              href="#forgot"
+            <Link
+              to="#forgot"
               className="text-[13px] font-semibold text-[#222831] font-poppins hover:underline"
             >
               {t('login.forgotPassword')}
-            </a>
+            </Link>
           </div>
         </form>
 
@@ -257,12 +257,13 @@ const Login: React.FC = () => {
           <p className="text-xs text-secondaryText font-poppins leading-relaxed">
             {t('login.noAccountText')}
           </p>
-          <a
-            href="#register"
+          <Link
+
+            to="/register"
             className="inline-block text-[13px] font-semibold text-myprimary font-poppins hover:underline"
           >
             {t('login.registerLink')}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

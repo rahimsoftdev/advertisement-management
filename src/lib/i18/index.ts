@@ -10,7 +10,7 @@ import frAbout from "./locales/fr/about.json";
 import frhowwork from "./locales/fr/howwoork.json";
 import frPrivacy from "./locales/fr/privacy.json";
 import frAnnouncement from "./locales/fr/announcement.json";
-
+import frUserdashbaord from "./locales/fr/userdashboard.json";
 
 
 // English
@@ -22,7 +22,7 @@ import enAbout from "./locales/en/about.json";
 import enhowwork from "./locales/en/howwoork.json";
 import enPrivacy from "./locales/en/privacy.json";
 import enAnnouncement from "./locales/en/announcement.json";
-
+import enUserdashbaord from "./locales/en/userdashboard.json";
 
 
 // Bangla
@@ -34,7 +34,7 @@ import bnAbout from "./locales/bn/about.json";
 import bnhowwork from "./locales/bn/howwoork.json";
 import bnPrivacy from "./locales/bn/privacy.json";
 import bnAnnouncement from "./locales/bn/announcement.json";
-
+import bnUserdashbaord from "./locales/bn/userdashboard.json";
 
 
 
@@ -48,34 +48,37 @@ i18n
     resources: {
       fr: {
         common: frCommon,
-        home:frHome,
-        pricing:frPricing,
-        auth:frAuth,
-        about:frAbout,
-        howwork:frhowwork,
-        legal:frPrivacy,
-        announcement:frAnnouncement
+        home: frHome,
+        pricing: frPricing,
+        auth: frAuth,
+        about: frAbout,
+        howwork: frhowwork,
+        legal: frPrivacy,
+        announcement: frAnnouncement,
+        userdashboard: frUserdashbaord
 
       },
       en: {
         common: enCommon,
-        home:enHome,
-        pricing:enPricing,
-        auth:enAuth,
-        about:enAbout,
-        howwork:enhowwork,
-        legal:enPrivacy,
-        announcement:enAnnouncement
+        home: enHome,
+        pricing: enPricing,
+        auth: enAuth,
+        about: enAbout,
+        howwork: enhowwork,
+        legal: enPrivacy,
+        announcement: enAnnouncement,
+        userdashboard: enUserdashbaord
       },
       bn: {
         common: bnCommon,
-        home:bnHome,
-        pricing:bnPricing,
-        auth:bnAuth,
-        about:bnAbout,
-        howwork:bnhowwork,
-        legal:bnPrivacy,
-        announcement:bnAnnouncement
+        home: bnHome,
+        pricing: bnPricing,
+        auth: bnAuth,
+        about: bnAbout,
+        howwork: bnhowwork,
+        legal: bnPrivacy,
+        announcement: bnAnnouncement,
+        userdashboard: bnUserdashbaord
       },
     },
 
@@ -89,7 +92,7 @@ i18n
     interpolation: {
       escapeValue: false,
     }
-    
+
   });
 
 export default i18n;

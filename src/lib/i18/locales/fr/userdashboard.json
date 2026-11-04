@@ -1,0 +1,23 @@
+{
+  "user_workspace_tag": "Espace De Travail De L'utilisateur",
+  "welcome_prefix": "Bienvenue",
+  "subtitle": "Entrez les détails ci-dessous. Casagen transforme votre annonce en une annonce professionnelle.",
+  "buttons": {
+    "create_announcement": "Créer une annonce",
+    "logout": "Se déconnecter"
+  },
+  "stats": {
+    "total_announcements": "TOTAL DES ANNONCES",
+    "credits": "CRÉDITS",
+    "pending_reviews": "AVIS PENDINS",
+    "plan_label": "Plan",
+    "free_plan": "Gratuit"
+  },
+  "created_announcements": {
+    "title": "Liste des annonces créées",
+    "subtitle": "Liste des annonces créées",
+    "active_session": "SÉANCE ACTIVE",
+    "status_ready": "PRÊT",
+    "project_ia_label": "PROJET D'IA"
+  }
+}
