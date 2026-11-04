@@ -8,7 +8,8 @@
     "login": "Se connecter",
     "register": "S'inscrire",
     "language": "Langue",
-    "logout": "Déconnexion"
+    "logout": "Déconnexion",
+    "rolse":  "Mentions légales"
   },
   "footer": {
     "description": "Créez des annonces immobilières professionnelles en quelques minutes seulement.",

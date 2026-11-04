@@ -1,0 +1,62 @@
+{
+  "title": "Privacy Policy",
+  "date": "February 2, 2026",
+  "section1": {
+    "title": "GDPR Compliance",
+    "description": "This Privacy Policy is fully compliant with the General Data Protection Regulation (GDPR) and French data protection laws. Your rights and the security of your data are our absolute priority."[cite: 2]
+  },
+  "section2": {
+    "title": "Information Collection",
+    "description": "Casagen collects information you provide directly, including your name, email address, payment information, listing details, communication data, and any information required to create or maintain an account. We also automatically collect technical data such as IP addresses, device information, browser type, usage logs, and interaction data within the Casagen portal."[cite: 2]
+  },
+  "section3": {
+    "title": "Use of Information",
+    "description": "Casagen uses your information to:",
+    "bullet1": "Operate and improve the platform and relocation services.",
+    "bullet2": "Process payments and manage listing creation.",
+    "bullet3": "Detect fraud or abuse and monitor platform integrity.",
+    "bullet4": "Provide customer support and comply with legal obligations.",
+    "bullet5": "Inform users of system changes or service-related notifications."[cite: 2]
+  },
+  "section4": {
+    "title": "Data Sharing and Disclosure",
+    "description": "Casagen may share information with service providers who support payment processing, analysis, hosting, or security. These providers only receive the information necessary to perform their functions.",
+    "highlight": "Casagen does not sell personal data.",
+    "footer": "Information may also be shared if required by French or European laws, regulations, or legal procedures."[cite: 2]
+  },
+  "section5": {
+    "title": "Security and Liability",
+    "description": "We store data using commercially reasonable safeguards in accordance with GDPR standards, but cannot guarantee absolute security. Users are responsible for the security of their devices and account credentials. Casagen is not responsible for unauthorized access resulting from user negligence or third-party breaches beyond its control."[cite: 2]
+  },
+  "section6": {
+    "title": "Data Retention",
+    "description": "User data is kept as long as necessary to operate the platform, meet legal requirements, or resolve disputes. Casagen may indefinitely retain anonymized or aggregated data for analytical purposes."[cite: 2]
+  },
+  "section7": {
+    "title": "Your Rights (GDPR Compliance)",
+    "description": "As a user (particularly within the EU), you have the right to:",
+    "card1_title": "Access",
+    "card1_desc": "Request access to your personal information.",
+    "card2_title": "Correction",
+    "card2_desc": "Request corrections to your data.",
+    "card3_title": "Erasure",
+    "card3_desc": "Request deletion of your account/data.",
+    "card4_title": "Object",
+    "card4_desc": "Object to certain data processing.",
+    "footer": "Casagen may refuse requests that interfere with legal obligations, security, or fraud prevention."[cite: 2]
+  },
+  "section8": {
+    "title": "Minors and Third-Party Links",
+    "description": "Casagen does not knowingly collect data from minors. Our platform may contain links to third-party services; however, we are not responsible for their privacy practices."[cite: 2]
+  },
+  "section9": {
+    "title": "Policy Modifications",
+    "description": "Casagen reserves the right to modify this Privacy Policy at any time. Continued use of the platform after changes are posted constitutes acceptance of the updated policy."[cite: 2]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "If you have questions regarding this privacy policy or wish to exercise your data rights, please contact the Casagen support team via our website.",
+    "button": "Contact support team"
+  },
+  "footer_note": "This privacy policy became effective on February 2, 2026 and complies with GDPR and French data protection regulations."[cite: 2]
+}

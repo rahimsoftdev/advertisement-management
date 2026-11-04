@@ -49,12 +49,13 @@ const Navbar = () => {
 
   // Current route-er navbar background
   const navbarBg = getNavbarBg(location.pathname);
-
+  //link come form common json
   const navLinks = [
     { name: t("navbar.home"), path: "/" },
     { name: t("navbar.pricing"), path: "/pricing" },
     { name: t("navbar.about"), path: "/about" },
     { name: t("navbar.howItWorks"), path: "/how-work" },
+    { name: t("navbar.rolse"), path: "/rolse" },
   ];
 
   const handleLanguageChange = (

@@ -8,7 +8,8 @@
     "login": "Login",
     "register": "Register",
     "language": "Language",
-    "logout": "Logout"
+    "logout": "Logout",
+    "rolse": "Legal notices"
   },
   "footer": {
     "description": "Create professional real estate listings in just a few minutes.",
