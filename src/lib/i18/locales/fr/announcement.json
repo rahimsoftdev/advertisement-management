@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "Décrivez votre propriété",
+    "subtitle": "Entrez les détails ci-dessous. Casagen transforme votre annonce en une annonce professionnelle."
+  },
+  "steps": {
+    "step1": {
+      "title": "Étape 1. Général et emplacement",
+      "emplacement_label": "EMPLACEMENT",
+      "emplacement_placeholder": "Entrez la ville ou le quartier",
+      "type_propriete_label": "TYPE DE PROPRIÉTÉ",
+      "surface_label": "SURFACE",
+      "nombre_pieces_label": "NOMBRE DE PIECES (facultatif)",
+      "nombre_pieces_placeholder": "Entrez les numéros de chambre",
+      "etage_label": "ETAGE (facultatif)",
+      "ascenseur_label": "ASCENSEUR (en option)"
+    },
+    "step2": {
+      "title": "Étape 2. Loyer et prix",
+      "loyer_net_label": "LOYER NET (CHF) *",
+      "charge_label": "Charge",
+      "exclu_label": "Exclu",
+      "parking_label": "PARKING (facultatif)",
+      "prix_label": "Prix"
+    },
+    "step3": {
+      "title": "Étape 3. Confort & Équipement",
+      "condition_label": "CONDITION *",
+      "condition_placeholder": "Sélectionnez l'état de la propriété",
+      "exposition_label": "EXPOSITION *",
+      "exposition_placeholder": "Sélectionnez l'exposition de la propriété",
+      "equipement_title": "ÉQUIPEMENT ET CARACTÉRISTIQUES (en option)",
+      "colonne_lavage": "Colonne de lavage",
+      "cuisine_equipee": "Cuisine équipée",
+      "balcon": "Balcon",
+      "cave": "Cave",
+      "jardin": "Jardin",
+      "autres_placeholder": "Autres (séparés par des virgules)"
+    },
+    "step4": {
+      "title": "Étape 4 : Conditions et proximité",
+      "disponible_label": "Disponible à partir de (facultatif)",
+      "disponible_placeholder": "p.ex immédiat ou 01.10.2024",
+      "animaux_label": "Animaux autorisés (facultatif)",
+      "proximité_label": "Proximité (facultatif)",
+      "proximité_placeholder": "p.ex supermarché à 3 min, pharmacie, centre ville, plage..."
+    },
+    "step5": {
+      "title": "Étape 5. Médias et informations complémentaires",
+      "upload_title": "Ajoutez vos plus belles photos",
+      "upload_subtitle": "Téléchargement de la simulation en cours...",
+      "upload_hint": "Glisser-déposer - ajoutez vos meilleures photos (prend en charge 5 à 15 images)",
+      "info_comp_label": "INFORMATIONS COMPLÉMENTAIRES (facultatif)",
+      "info_comp_placeholder": "Ecrivez quelques mots sur ce qui rend votre bien unique..."
+    }
+  },
+  "preview": {
+    "ready_title": "Votre annonce est prête.",
+    "ready_subtitle": "Vous pouvez modifier ou générer une autre version.",
+    "modifier_btn": "Modifier",
+    "unlock_full_btn": "Débloquez l'annonce complète",
+    "apercu_label": "APERÇU DE L'ANNONCE GÉNÉRÉE",
+    "lang_badge": "FRANÇAIS / SUISSE ROMANDE",
+    "copy_btn": "Copier le texte",
+    "download_pdf_btn": "Télécharger le PDF",
+    "modal": {
+      "title": "Débloquez votre annonce professionnelle",
+      "description": "Débloquez votre annonce professionnelle. Accédez immédiatement à une annonce immobilière claire, structurée et convaincante, adaptée au marché suisse.",
+      "pay_btn": "Débloquez avec 9.90 CHF"
+    },
+    "quality_level": {
+      "title": "Niveau de qualité",
+      "status": "BASIQUE",
+      "percentage": "40%",
+      "suggestions_title": "SUGGESTIONS",
+      "sug1": "Mentionnez si une connexion Internet à haut débit est disponible",
+      "sug2": "Ajouter plus de détails sur le transport local",
+      "sug3": "Création du balcon Spécify",
+      "sug4": "Avis professionnel recommandé"
+    },
+    "ai_options": {
+      "title": "Options de modification de l'IA",
+      "credits_tag": "crédits",
+      "btn1": "Rendez-le plus premium",
+      "btn2": "Ajoutez un ton plus chaud",
+      "btn3": "Raccourcir le texte",
+      "btn4": "Mettre davantage en valeur l'emplacement",
+      "btn5": "Optimiser pour les investisseurs",
+      "btn6": "Optimiser pour AirBnB",
+      "generate_placeholder": "Décrivez vos pensées et laissez l'IA les planifier.",
+      "generate_btn": "Générer"
+    },
+    "expert_validation": {
+      "title": "Validation par un expert",
+      "description": "Obtenez l'avis d'un professionnel de l'immobilier pour CHF 15.-. Votre annonce est analysée et vérifiée afin d'améliorer sa précision et sa crédibilité.",
+      "btn": "Demander la validation"
+    },
+    "no_credits": {
+      "title": "0 crédits",
+      "warning_title": "Vous n'avez plus de crédits",
+      "warning_desc": "Continuez à améliorer votre annonce pour maximiser vos chances",
+      "btn": "Obtenez plus de crédits"
+    }
+  },
+  "navigation": {
+    "retour": "Retour",
+    "etape_suivante": "Étape suivante",
+    "annuler": "Annuler"
+  },
+  "steps_nav": {
+    "general": "GÉNÉRAL",
+    "finances": "FINANCES",
+    "confort": "CONFORT",
+    "conditions": "CONDITIONS",
+    "medias": "MÉDIAS"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "Describe your property",
+    "subtitle": "Enter the details below. Casagen turns your listing into a professional advertisement."
+  },
+  "steps": {
+    "step1": {
+      "title": "Step 1. General and location",
+      "emplacement_label": "LOCATION",
+      "emplacement_placeholder": "Enter city or neighborhood",
+      "type_propriete_label": "PROPERTY TYPE",
+      "surface_label": "SURFACE",
+      "nombre_pieces_label": "NUMBER OF ROOMS (optional)",
+      "nombre_pieces_placeholder": "Enter room numbers",
+      "etage_label": "FLOOR (optional)",
+      "ascenseur_label": "ELEVATOR (optional)"
+    },
+    "step2": {
+      "title": "Step 2. Rent and price",
+      "loyer_net_label": "NET RENT (CHF) *",
+      "charge_label": "Charges",
+      "exclu_label": "Excluded",
+      "parking_label": "PARKING (optional)",
+      "prix_label": "Price"
+    },
+    "step3": {
+      "title": "Step 3. Comfort & Equipment",
+      "condition_label": "CONDITION *",
+      "condition_placeholder": "Select property condition",
+      "exposition_label": "ORIENTATION *",
+      "exposition_placeholder": "Select property orientation",
+      "equipement_title": "EQUIPMENT AND FEATURES (optional)",
+      "colonne_lavage": "Washing column",
+      "cuisine_equipee": "Equipped kitchen",
+      "balcon": "Balcony",
+      "cave": "Cellar",
+      "jardin": "Garden",
+      "autres_placeholder": "Others (separated by commas)"
+    },
+    "step4": {
+      "title": "Step 4: Conditions and proximity",
+      "disponible_label": "Available from (optional)",
+      "disponible_placeholder": "e.g. immediate or 01.10.2024",
+      "animaux_label": "Pets allowed (optional)",
+      "proximité_label": "Proximity (optional)",
+      "proximité_placeholder": "e.g. supermarket 3 min away, pharmacy, city center, beach..."
+    },
+    "step5": {
+      "title": "Step 5. Media and additional information",
+      "upload_title": "Add your best photos",
+      "upload_subtitle": "Downloading simulation in progress...",
+      "upload_hint": "Drag and drop - add your best photos (supports 5 to 15 images)",
+      "info_comp_label": "ADDITIONAL INFORMATION (optional)",
+      "info_comp_placeholder": "Write a few words about what makes your property unique..."
+    }
+  },
+  "preview": {
+    "ready_title": "Your listing is ready.",
+    "ready_subtitle": "You can modify or generate another version.",
+    "modifier_btn": "Modify",
+    "unlock_full_btn": "Unlock complete listing",
+    "apercu_label": "GENERATED LISTING PREVIEW",
+    "lang_badge": "FRENCH / SWISS ROMANDY",
+    "copy_btn": "Copy text",
+    "download_pdf_btn": "Download PDF",
+    "modal": {
+      "title": "Unlock your professional listing",
+      "description": "Unlock your professional listing. Get immediate access to a clear, structured, and convincing real estate listing tailored to the Swiss market.",
+      "pay_btn": "Unlock with 9.90 CHF"
+    },
+    "quality_level": {
+      "title": "Quality level",
+      "status": "BASIC",
+      "percentage": "40%",
+      "suggestions_title": "SUGGESTIONS",
+      "sug1": "Mention if high-speed internet connection is available",
+      "sug2": "Add more details on local transport",
+      "sug3": "Creation of the balcony Specify",
+      "sug4": "Professional advice recommended"
+    },
+    "ai_options": {
+      "title": "AI modification options",
+      "credits_tag": "credits",
+      "btn1": "Make it more premium",
+      "btn2": "Add a warmer tone",
+      "btn3": "Shorten text",
+      "btn4": "Highlight location more",
+      "btn5": "Optimize for investors",
+      "btn6": "Optimize for AirBnB",
+      "generate_placeholder": "Describe your thoughts and let AI plan them.",
+      "generate_btn": "Generate"
+    },
+    "expert_validation": {
+      "title": "Expert validation",
+      "description": "Get feedback from a real estate professional for CHF 15.-. Your listing is analyzed and checked to improve its accuracy and credibility.",
+      "btn": "Request validation"
+    },
+    "no_credits": {
+      "title": "0 credits",
+      "warning_title": "You have no more credits",
+      "warning_desc": "Continue to improve your listing to maximize your chances",
+      "btn": "Get more credits"
+    }
+  },
+  "navigation": {
+    "retour": "Back",
+    "etape_suivante": "Next step",
+    "annuler": "Cancel"
+  },
+  "steps_nav": {
+    "general": "GENERAL",
+    "finances": "FINANCES",
+    "confort": "COMFORT",
+    "conditions": "CONDITIONS",
+    "medias": "MEDIA"
+  }
+}
