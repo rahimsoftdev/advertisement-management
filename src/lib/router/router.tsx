@@ -8,6 +8,7 @@ import Register from "../../pages/Register"
 import AboutPage from "../../pages/AboutPage"
 // import HowItWork from "../../pages/HowItWorkPage"
 import HowItWorkPage from "../../pages/HowItWorkPage"
+import MentionsLegalesPage from "../../pages/MentionsLegalesPage"
 
 const router = createBrowserRouter([
     {
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
             },
             {
                 path:"about", Component:AboutPage
-            },{
+            },
+            {
                 path:"how-work", Component:HowItWorkPage
+            },
+            {
+                path:"rolse", Component:MentionsLegalesPage
             }
         ]
     },

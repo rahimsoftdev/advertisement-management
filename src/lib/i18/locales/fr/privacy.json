@@ -3,11 +3,11 @@
   "date": "2 février 2026",
   "section1": {
     "title": "Conforme au RGPD",
-    "description": "Cette Politique de Confidentialité est entièrement conforme au Règlement Général sur la Protection des Données (RGPD) et aux lois françaises sur la protection des données. Vos droits et la sécurité de vos données sont notre priorité absolue."[cite: 2]
+    "description": "Cette Politique de Confidentialité est entièrement conforme au Règlement Général sur la Protection des Données (RGPD) et aux lois françaises sur la protection des données. Vos droits et la sécurité de vos données sont notre priorité absolue."
   },
   "section2": {
     "title": "Collecte d'informations",
-    "description": "Casagen collecte les informations que vous fournissez directement, y compris votre nom, votre adresse e-mail, vos informations de paiement, les détails de votre annonce, vos données de communication et toute information requise pour créer ou maintenir un compte. Nous collectons également automatiquement des données techniques telles que les adresses IP, les informations sur l'appareil, le type de navigateur, les journaux d'utilisation et les données d'interaction au sein du portail Casagen."[cite: 2]
+    "description": "Casagen collecte les informations que vous fournissez directement, y compris votre nom, votre adresse e-mail, vos informations de paiement, les détails de votre annonce, vos données de communication et toute information requise pour créer ou maintenir un compte. Nous collectons également automatiquement des données techniques telles que les adresses IP, les informations sur l'appareil, le type de navigateur, les journaux d'utilisation et les données d'interaction au sein du portail Casagen."
   },
   "section3": {
     "title": "Utilisation des informations",
@@ -16,21 +16,21 @@
     "bullet2": "Traitement des paiements et gestion de la création d'annonces.",
     "bullet3": "Détecter les fraudes ou les utilisations abusives et surveiller l'intégrité de la plateforme.",
     "bullet4": "Fournir une assistance client et respecter les obligations légales.",
-    "bullet5": "Informer les utilisateurs des modifications du système ou des notifications liées au service."[cite: 2]
+    "bullet5": "Informer les utilisateurs des modifications du système ou des notifications liées au service."
   },
   "section4": {
     "title": "Partage et divulgation de données",
     "description": "Casagen peut partager des informations avec des prestataires de services qui prennent en charge le traitement des paiements, l'analyse, l'hébergement ou la sécurité. Ces prestataires ne reçoivent que les informations nécessaires à l'exercice de leurs fonctions.",
     "highlight": "Casagen ne vend pas de données personnelles.",
-    "footer": "Les informations peuvent également être partagées si les lois, réglementations ou procédures judiciaires françaises ou européennes l'exigent."[cite: 2]
+    "footer": "Les informations peuvent également être partagées si les lois, réglementations ou procédures judiciaires françaises ou européennes l'exigent."
   },
   "section5": {
     "title": "Sécurité et responsabilité",
-    "description": "Nous stockons les données en utilisant des garanties commercialement raisonnables, conformément aux normes GDPR, mais ne pouvant pas garantir une sécurité absolue. Les utilisateurs sont responsables de la sécurité de leurs appareils et des informations d'identification de leur compte. Casagen n'est pas responsable des accès non autorisés résultant de la négligence de l'utilisateur ou de violations de tiers indépendantes de sa volonté."[cite: 2]
+    "description": "Nous stockons les données en utilisant des garanties commercialement raisonnables, conformément aux normes GDPR, mais ne pouvant pas garantir une sécurité absolue. Les utilisateurs sont responsables de la sécurité de leurs appareils et des informations d'identification de leur compte. Casagen n'est pas responsable des accès non autorisés résultant de la négligence de l'utilisateur ou de violations de tiers indépendantes de sa volonté."
   },
   "section6": {
     "title": "Conservation des données",
-    "description": "Les données des utilisateurs sont conservées aussi longtemps que nécessaire pour faire fonctionner la plateforme, répondre aux exigences légales ou résoudre des litiges. Casagen peut conserver indéfiniment des données anonymisées ou agrégées à des fins d'analyse."[cite: 2]
+    "description": "Les données des utilisateurs sont conservées aussi longtemps que nécessaire pour faire fonctionner la plateforme, répondre aux exigences légales ou résoudre des litiges. Casagen peut conserver indéfiniment des données anonymisées ou agrégées à des fins d'analyse."
   },
   "section7": {
     "title": "Vos droits (conformité RGPD)",
@@ -40,23 +40,23 @@
     "card2_title": "Correction",
     "card2_desc": "Demander des corrections à vos données.",
     "card3_title": "Effacement",
-    "card3_desc": "Demander la suppression de la s'ille/compte.",
+    "card3_desc": "Demander la suppression de votre compte.",
     "card4_title": "Objet",
-    "card4_desc": "S'opposer à certaine traitement de données.",
-    "footer": "Casagen peut refuser les demandes qui interfèrent avec les obligations légales, la sécurité ou la prévention de la fraude."[cite: 2]
+    "card4_desc": "S'opposer à certain traitement de données.",
+    "footer": "Casagen peut refuser les demandes qui interfèrent avec les obligations légales, la sécurité ou la prévention de la fraude."
   },
   "section8": {
     "title": "Mineurs et liens tiers",
-    "description": "Casagen ne collecte pas sciemment de données auprès de mineurs. Notre plateforme peut contenir des liens vers des services tiers ; cependant, nous ne sommes pas responsables de leurs pratiques de confidentialité."[cite: 2]
+    "description": "Casagen ne collecte pas sciemment de données auprès de mineurs. Notre plateforme peut contenir des liens vers des services tiers ; cependant, nous ne sommes pas responsables de leurs pratiques de confidentialité."
   },
   "section9": {
     "title": "Modifications de la politique",
-    "description": "Casagen se réserve le droit de modifier cette Politique de Confidentialité à tout moment. L'utilisation continue de la plateforme après la publication des modifications constitue l'acceptation de la politique mise à jour."[cite: 2]
+    "description": "Casagen se réserve le droit de modifier cette Politique de Confidentialité à tout moment. L'utilisation continue de la plateforme après la publication des modifications constitue l'acceptation de la politique mise à jour."
   },
   "contact": {
     "title": "Contactez-nous",
     "description": "Si vous avez des questions concernant cette politique de confidentialité ou souhaitez exercer vos droits en matière de données, veuillez contacter l'équipe d'assistance Casagen via notre site Web.",
     "button": "Contacter l'équipe d'assistance"
   },
-  "footer_note": "Cette confidentialité est entrée en vigueur le 2 février 2026 et est conforme au RGPD et à la réglementation française sur la protection des données réglementation."[cite: 2]
+  "footer_note": "Cette confidentialité est entrée en vigueur le 2 février 2026 et est conforme au RGPD et à la réglementation française sur la protection des données."
 }

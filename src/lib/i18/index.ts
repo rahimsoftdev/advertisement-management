@@ -9,6 +9,7 @@ import frPricing from "./locales/fr/pricing.json";
 import frAuth from "./locales/fr/auth.json";
 import frAbout from "./locales/fr/about.json";
 import frhowwork from "./locales/fr/howwoork.json";
+import frPrivacy from "./locales/fr/privacy.json";
 
 
 
@@ -19,6 +20,8 @@ import enPricing from "./locales/en/pricing.json";
 import enAuth from "./locales/en/auth.json";
 import enAbout from "./locales/en/about.json";
 import enhowwork from "./locales/en/howwoork.json";
+import enPrivacy from "./locales/en/privacy.json";
+
 
 // Bangla
 import bnCommon from "./locales/bn/common.json";
@@ -27,6 +30,8 @@ import bnPricing from "./locales/bn/pricing.json";
 import bnAuth from "./locales/bn/auth.json";
 import bnAbout from "./locales/bn/about.json";
 import bnhowwork from "./locales/bn/howwoork.json";
+import bnPrivacy from "./locales/bn/privacy.json";
+
 
 
 
@@ -43,7 +48,8 @@ i18n
         pricing:frPricing,
         auth:frAuth,
         about:frAbout,
-        howwork:frhowwork
+        howwork:frhowwork,
+        legal:frPrivacy
 
       },
       en: {
@@ -52,7 +58,8 @@ i18n
         pricing:enPricing,
         auth:enAuth,
         about:enAbout,
-        howwork:enhowwork
+        howwork:enhowwork,
+        legal:enPrivacy
       },
       bn: {
         common: bnCommon,
@@ -60,7 +67,8 @@ i18n
         pricing:bnPricing,
         auth:bnAuth,
         about:bnAbout,
-        howwork:bnhowwork
+        howwork:bnhowwork,
+        legal:bnPrivacy
       },
     },
 
