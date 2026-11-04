@@ -36,6 +36,9 @@ export default function UserDashboardPage() {
         if (!userInfo) {
             navigate('/login');
         }
+        if(userInfo?.role !== 'user'){
+        navigate('/login');
+    }
     }, [userInfo, navigate]);
 
     const userName = userInfo?.name || "Md Sahin";

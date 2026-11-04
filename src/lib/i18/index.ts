@@ -36,6 +36,10 @@ import bnPrivacy from "./locales/bn/privacy.json";
 import bnAnnouncement from "./locales/bn/announcement.json";
 import bnUserdashbaord from "./locales/bn/userdashboard.json";
 
+import frAdmin from "./locales/fr/admindashboard.json";
+import enAdmin from "./locales/en/admindashboard.json";
+import bnAdmin from "./locales/bn/admindashboard.json";
+
 
 
 
@@ -55,7 +59,8 @@ i18n
         howwork: frhowwork,
         legal: frPrivacy,
         announcement: frAnnouncement,
-        userdashboard: frUserdashbaord
+        userdashboard: frUserdashbaord,
+        admindashboard: frAdmin 
 
       },
       en: {
@@ -67,7 +72,8 @@ i18n
         howwork: enhowwork,
         legal: enPrivacy,
         announcement: enAnnouncement,
-        userdashboard: enUserdashbaord
+        userdashboard: enUserdashbaord,
+        admindashboard: enAdmin
       },
       bn: {
         common: bnCommon,
@@ -78,7 +84,8 @@ i18n
         howwork: bnhowwork,
         legal: bnPrivacy,
         announcement: bnAnnouncement,
-        userdashboard: bnUserdashbaord
+        userdashboard: bnUserdashbaord,
+        admindashboard: bnAdmin
       },
     },
 

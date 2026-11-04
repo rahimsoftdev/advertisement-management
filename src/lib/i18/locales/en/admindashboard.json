@@ -1,0 +1,152 @@
+{
+  "header": {
+    "badge": "ADMIN JOURNAL",
+    "title": "MANAGEMENT CONSOLE",
+    "subtitle": "Monitoring the pipeline, credits and member growth.",
+    "logout": "Log out"
+  },
+  "stats": {
+    "totalMembers": "TOTAL MEMBERS",
+    "paidUsers": "PAID USERS",
+    "pipelineLoad": "PIPELINE LOAD",
+    "active": "{{count}} Active"
+  },
+  "tabs": {
+    "manageListings": "Manage listings",
+    "pricingRequests": "Pricing & requests"
+  },
+  "common": {
+    "searchUsers": "Search users...",
+    "cancel": "Cancel",
+    "view": "View",
+    "live": "Live",
+    "pending": "PENDING",
+    "paid": "PAID",
+    "liveStatus": "LIVE",
+    "freeMember": "FREE MEMBER",
+    "paidMember": "PAID MEMBER",
+    "swissIdentity": "SWISS IDENTITY",
+    "status": "STATUS",
+    "action": "ACTION"
+  },
+  "activeMembers": {
+    "title": "Active members",
+    "subtitle": "Managing access for {{shown}} users out of {{total}} in total",
+    "columns": {
+      "identity": "SWISS IDENTITY",
+      "package": "PACKAGE",
+      "balance": "BALANCE",
+      "ledger": "LEDGER ADJUSTMENTS"
+    },
+    "listingCount_one": "{{count}} listing",
+    "listingCount_other": "{{count}} listings",
+    "addPack": "+1 Pack",
+    "addCredit": "Add credit"
+  },
+  "approvalPipeline": {
+    "title": "Approval pipeline",
+    "subtitle": "Managing access for {{shown}} users out of {{total}} in total",
+    "columns": {
+      "property": "Property",
+      "userId": "User ID",
+      "status": "Status",
+      "action": "Action"
+    },
+    "propertyTypes": {
+      "apartment": "Apartment"
+    },
+    "user": "User"
+  },
+  "pricing": {
+    "title": "Pricing & packages",
+    "addPackage": "Add a package",
+    "popularBadge": "Popular",
+    "editPackage": "Edit package",
+    "credits_one": "{{count}} credit",
+    "credits_other": "{{count}} credits",
+    "perCredit": "Approx. {{price}} CHF / credit",
+    "plans": {
+      "mini": {
+        "name": "MINI PACK",
+        "description": "Perfect for selling or renting a single property.",
+        "tagline": "Easy test, small commitment",
+        "features": [
+          "Full access and refinement",
+          "Premium styles included",
+          "Fully editable content",
+          "No monthly subscription",
+          "Optimised Swiss market"
+        ]
+      },
+      "starter": {
+        "name": "STARTER PACK",
+        "description": "Perfect for selling or renting a single property.",
+        "tagline": "Best value for money, smart choice",
+        "features": [
+          "Full access and refinement",
+          "Premium styles included",
+          "Fully editable content",
+          "No monthly subscription",
+          "Optimised Swiss market"
+        ]
+      },
+      "pro": {
+        "name": "PRO PACK",
+        "description": "Best quality-price ratio for multiple properties.",
+        "tagline": "Best value for money, smart choice",
+        "features": [
+          "Full access and refinement",
+          "Instant AI generation",
+          "Premium styles included",
+          "Save on every listing"
+        ]
+      }
+    }
+  },
+  "requests": {
+    "title": "New requests",
+    "subtitle": "{{count}} new members are invited to purchase packages.",
+    "columns": {
+      "identity": "SWISS IDENTITY",
+      "status": "STATUS",
+      "package": "PACKAGE",
+      "action": "ACTION"
+    },
+    "packages": {
+      "individual": "Individual",
+      "essential": "Essential",
+      "premium": "Premium"
+    },
+    "grant": "Grant"
+  },
+  "editPlanModal": {
+    "title": "Edit plan: {{name}}",
+    "subtitle": "Configure the pricing package details",
+    "planName": "Plan name",
+    "popularBadge": "Popular badge",
+    "yes": "Yes",
+    "no": "No",
+    "credits": "Credits",
+    "price": "Price",
+    "creditUsage": "Credit usage",
+    "creditUsagePlaceholder": "ONLY {{price}} CHF / CREDIT",
+    "quote": "Quote",
+    "features": "FEATURES",
+    "addFeaturePlaceholder": "Add a new feature...",
+    "cancel": "Cancel",
+    "save": "Save changes"
+  },
+  "grantModal": {
+    "title": "Confirm package grant",
+    "question": "Are you sure you want to grant this package to the user?",
+    "warning": "Note: once this package is granted, you cannot cancel this action.",
+    "detailsTitle": "PACKAGE DETAILS",
+    "username": "Username",
+    "requestedPlan": "Requested plan",
+    "paymentStatus": "Payment status",
+    "listingLimit": "Listing limit",
+    "listingsValue": "{{count}} listings",
+    "cancel": "Cancel",
+    "confirm": "Grant now"
+  }
+}

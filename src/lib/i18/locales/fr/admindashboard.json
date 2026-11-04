@@ -1,0 +1,152 @@
+{
+  "header": {
+    "badge": "JOURNAL ADMINISTRATIF",
+    "title": "CONSOLE DE GESTION",
+    "subtitle": "Surveillance du pipeline, du crédit et de la croissance des membres.",
+    "logout": "Se déconnecter"
+  },
+  "stats": {
+    "totalMembers": "TOTAL DES MEMBRES",
+    "paidUsers": "UTILISATEURS PAYANTS",
+    "pipelineLoad": "CHARGE DES PIPELINES",
+    "active": "{{count}} Actif"
+  },
+  "tabs": {
+    "manageListings": "Gérer les annonces",
+    "pricingRequests": "Tarifs et demandes"
+  },
+  "common": {
+    "searchUsers": "Rechercher des utilisateurs...",
+    "cancel": "Annuler",
+    "view": "Voir",
+    "live": "En direct",
+    "pending": "EN ATTENTE",
+    "paid": "PAYÉ",
+    "liveStatus": "EN DIRECT",
+    "freeMember": "MEMBRE GRATUIT",
+    "paidMember": "MEMBRE PAYÉ",
+    "swissIdentity": "IDENTITÉ SUISSE",
+    "status": "STATUT",
+    "action": "ACTION"
+  },
+  "activeMembers": {
+    "title": "Membres actifs",
+    "subtitle": "Gestion de l'accès pour {{shown}} utilisateurs sur {{total}} au total",
+    "columns": {
+      "identity": "IDENTITÉ SUISSE",
+      "package": "EMBALLER",
+      "balance": "ÉQUILIBRE",
+      "ledger": "AJUSTEMENTS DU GRAND LIVRE"
+    },
+    "listingCount_one": "{{count}} annonce",
+    "listingCount_other": "{{count}} annonces",
+    "addPack": "+1 Pack",
+    "addCredit": "Crédit d'aides"
+  },
+  "approvalPipeline": {
+    "title": "Pipeline d'approbation",
+    "subtitle": "Gestion de l'accès pour {{shown}} utilisateurs sur {{total}} au total",
+    "columns": {
+      "property": "Propriété",
+      "userId": "ID de l'utilisateur",
+      "status": "Statut",
+      "action": "Action"
+    },
+    "propertyTypes": {
+      "apartment": "Appartement"
+    },
+    "user": "Utilisateur"
+  },
+  "pricing": {
+    "title": "Tarifs et forfaits",
+    "addPackage": "Ajouter un forfait",
+    "popularBadge": "Populaire",
+    "editPackage": "Modifier le forfait",
+    "credits_one": "{{count}} crédit",
+    "credits_other": "{{count}} crédits",
+    "perCredit": "Environ {{price}} CHF / crédit",
+    "plans": {
+      "mini": {
+        "name": "MINI-PACK",
+        "description": "Parfait pour une vente ou une location de propriété individuelle.",
+        "tagline": "Test facile, petit engagement",
+        "features": [
+          "Accès complet et raffinement",
+          "Styles haut de gamme inclus",
+          "Contenu entièrement modifiable",
+          "Pas d'abonnement mensuel",
+          "Marché suisse optimisé"
+        ]
+      },
+      "starter": {
+        "name": "PACK DE DÉMARRAGE",
+        "description": "Parfait pour une vente ou une location de propriété individuelle.",
+        "tagline": "Meilleur rapport qualité-prix, choix intelligent",
+        "features": [
+          "Accès complet et raffinement",
+          "Styles haut de gamme inclus",
+          "Contenu entièrement modifiable",
+          "Pas d'abonnement mensuel",
+          "Marché suisse optimisé"
+        ]
+      },
+      "pro": {
+        "name": "PACK PRO",
+        "description": "Meilleur rapport qualité-prix pour les propriétés multiples.",
+        "tagline": "Meilleur rapport qualité-prix, choix intelligent",
+        "features": [
+          "Accès complet et raffinement",
+          "Génération instantanée d'IA",
+          "Styles haut de gamme inclus",
+          "Économisez sur chaque annonce"
+        ]
+      }
+    }
+  },
+  "requests": {
+    "title": "Nouvelles demandes",
+    "subtitle": "{{count}} Les nouveaux membres sont invités à acheter des forfaits.",
+    "columns": {
+      "identity": "IDENTITÉ SUISSE",
+      "status": "STATUT",
+      "package": "EMBALLER",
+      "action": "ACTION"
+    },
+    "packages": {
+      "individual": "Individuel",
+      "essential": "Essentiel",
+      "premium": "Prime"
+    },
+    "grant": "Mes subventions"
+  },
+  "editPlanModal": {
+    "title": "Modifier le plan : {{name}}",
+    "subtitle": "Configurer les détails du forfait tarifaire",
+    "planName": "Nom du régime",
+    "popularBadge": "Insigne populaire",
+    "yes": "Oui",
+    "no": "Non",
+    "credits": "Crédits",
+    "price": "Prix",
+    "creditUsage": "Utilisation du crédit",
+    "creditUsagePlaceholder": "SEULEMENT {{price}} CHF / CRÉDIT",
+    "quote": "Citation",
+    "features": "CARACTÉRISTIQUES",
+    "addFeaturePlaceholder": "Ajouter une nouvelle fonctionnalité...",
+    "cancel": "Annuler",
+    "save": "Enregistrer les modifications"
+  },
+  "grantModal": {
+    "title": "Confirmer l'octroi du package",
+    "question": "Êtes-vous sûr de vouloir accorder ce package à l'utilisateur ?",
+    "warning": "Remarque : Une fois que ce package est accordé, vous ne pourrez plus annuler cette action.",
+    "detailsTitle": "DÉTAILS DU FORFAIT",
+    "username": "Nom d'utilisateur",
+    "requestedPlan": "Plan demandé",
+    "paymentStatus": "Statut de paiement",
+    "listingLimit": "Limite d'inscription",
+    "listingsValue": "{{count}} annonces",
+    "cancel": "Annuler",
+    "confirm": "Accorder maintenant"
+  }
+}

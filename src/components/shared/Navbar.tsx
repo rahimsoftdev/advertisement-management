@@ -332,7 +332,7 @@ const Navbar = () => {
 
           {userInfo ? (
             
-            <Link to={'dashboard/user'} className={logoutClass}>
+            <Link to={`dashboard/${userInfo?.role}`} className={logoutClass}>
               
               <span>{t("navbar.dashboard")}</span>
             </Link>
@@ -415,7 +415,7 @@ const Navbar = () => {
               <div className="mt-4">
                 <Link
                   
-                to={'dashboard/user'}
+                to={`dashboard/${userInfo?.role}`} 
                   className="inline-flex h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-myprimary bg-myprimary px-4 text-center text-sm font-medium text-white transition hover:opacity-90 active:scale-95 sm:text-base"
                 >
                  

@@ -11,6 +11,7 @@ import HowItWorkPage from "../../pages/HowItWorkPage"
 import MentionsLegalesPage from "../../pages/MentionsLegalesPage"
 import AnnouncementPage from "../../pages/AnnouncementPage"
 import UserDashboardPage from "../../pages/UserDashboardPage"
+import AdminDashboardPage from "../../pages/AdminDashboardPage"
 
 const router = createBrowserRouter([
     {
@@ -40,7 +41,10 @@ const router = createBrowserRouter([
 
             {
                 path:"/dashboard/user", Component:UserDashboardPage
-            }
+            },
+            {
+                path:"/dashboard/admin", Component:AdminDashboardPage
+            },
         ]
     },
     {
