@@ -34,7 +34,9 @@ const NotePad: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-const CreateListingBanner: React.FC = ({isPricing  = false }:PricingCardProps) => {
+const CreateListingBanner: React.FC<PricingCardProps> = ({
+  isPricing = false,
+}) => {
   const { t } = useTranslation('home');
 
   return (

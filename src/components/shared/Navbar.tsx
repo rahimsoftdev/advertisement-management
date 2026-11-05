@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router";
+import { Link, NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import {
   FiMenu,
   FiX,
   FiGlobe,
   FiChevronDown,
-  FiLogOut,
+ 
   FiCheck,
 } from "react-icons/fi";
 import logo from "../../assets/images/logo.png";
@@ -153,7 +153,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+  
 
   // Login thakle user info, na thakle null
   const [userInfo, setUserInfo] = useState(getAuthInfo());
@@ -183,18 +183,7 @@ const Navbar = () => {
     scrollToTop();
   };
 
-  // Logout: localStorage theke user info remove kore home e pathabe
-  const handleLogout = () => {
-    try {
-      localStorage.removeItem("authInfo");
-    } catch {
-      // localStorage access na pele ignore
-    }
-    setUserInfo(null);
-    window.dispatchEvent(new Event("authChange"));
-    setIsOpen(false);
-    navigate("/login");
-  };
+
 
   // Login/logout hole ba onno tab e change hole navbar update hobe
   useEffect(() => {

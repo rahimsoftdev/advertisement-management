@@ -1,4 +1,3 @@
-import React from 'react';
 import CtaSection from '../components/home/CtaSection';
 import CreateListingBanner from '../components/home/CreateListingBanner';
 import PricingHero from '../components/pricing/PricingHero';

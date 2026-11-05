@@ -16,6 +16,8 @@ interface Plan {
   isPopular: boolean;
 }
 
+
+
 interface PricingCardProps {
   plan: Plan;
   onButtonClick?: () => void; // Function to trigger the edit modal

@@ -1,21 +1,33 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FiCheckCircle } from 'react-icons/fi';
-import { FaStar } from 'react-icons/fa';
+// import { FiCheckCircle } from 'react-icons/fi';
+// import { FaStar } from 'react-icons/fa';
 import PricingCard from '../ui/PricingCard';
 
+// interface Plan {
+//     name: string;
+//     badge?: string;
+//     description: string;
+//     credits: string;
+//     price: string;
+//     subPrice: string;
+//     /** Short line under the price, e.g. "Test facile, petit engagement" */
+//     tagline?: string;
+//     features: string[];
+//     buttonText: string;
+//     isPopular: boolean;
+// }
 interface Plan {
-    name: string;
-    badge?: string;
-    description: string;
-    credits: string;
-    price: string;
-    subPrice: string;
-    /** Short line under the price, e.g. "Test facile, petit engagement" */
-    tagline?: string;
-    features: string[];
-    buttonText: string;
-    isPopular: boolean;
+  name: string;
+  badge?: string;
+  description: string;
+  credits: string;
+  price: string;
+  subPrice: string;
+  tagline: string;
+  features: string[];
+  buttonText: string;
+  isPopular: boolean;
 }
 
 const AiCreditsPricing: React.FC = () => {

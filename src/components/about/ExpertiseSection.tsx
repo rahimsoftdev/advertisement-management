@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useTranslation } from "react-i18next";
 import { FiBarChart2, FiShield, FiTrendingUp } from "react-icons/fi"; // React Icons import kora holo
 import exportimage from '../../assets/images/export.png'

@@ -88,14 +88,19 @@ const Register: React.FC = () => {
   };
 
   /* Google diye register: direct success */
-  const handleGoogle = () => {
-    saveAuthAndFinish({
-      email: "rahim1234@gmail.com",
-      name: "rahim1234",
-      userId: "user-google-001",
-      role: "user",
-    });
+const handleGoogle = () => {
+  const userInfo: AuthInfo = {
+    email: "rahim1234@gmail.com",
+    name: "rahim1234",
+    userId: "user-google-001",
+    role: "user",
+    credit: 1,
   };
+
+  saveAuthAndFinish(userInfo);
+};
+
+ 
 
   const goNext = () => {
     setError("");
@@ -172,6 +177,7 @@ const Register: React.FC = () => {
       name: `${firstName.trim()} ${lastName.trim()}`,
       userId: `user-${Date.now()}`,
       role: "user",
+      credit:1
     });
   };
 
